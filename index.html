@@ -18,11 +18,45 @@
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             padding: 30px;
             border-radius: 8px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             border-left: 4px solid #3b82f6;
         }
         h1 { color: #60a5fa; font-size: 2.2em; margin-bottom: 10px; }
         .date { color: #94a3b8; font-size: 1.1em; }
+        
+        /* Navigation Styles */
+        .nav-menu {
+            background: #1e293b;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid #334155;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-menu a {
+            color: #60a5fa;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+        .nav-menu a:hover {
+            background: #334155;
+        }
+        .nav-menu a.current {
+            background: #3b82f6;
+            color: #fff;
+        }
+        .nav-divider {
+            height: 20px;
+            width: 1px;
+            background: #334155;
+        }
+        
         .section { 
             background: #1e293b;
             padding: 25px;
@@ -85,159 +119,105 @@
             text-align: left;
             border-bottom: 1px solid #334155;
         }
-        .positions-table th {
-            background: #0f172a;
-            color: #60a5fa;
-            font-weight: 600;
-        }
-        footer {
-            text-align: center;
-            color: #64748b;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #334155;
-            font-size: 0.9em;
-        }
+        .positions-table th { color: #60a5fa; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 Trading Battleplan</h1>
-            <div class="date">Wednesday, February 12, 2026</div>
-            <div class="date" style="margin-top: 5px;">Generated: 5:00 PM ET Feb 11</div>
+            <h1>Trading Battleplan</h1>
+            <div class="date">February 12, 2026</div>
         </header>
 
-        <section class="section">
-            <h2>🎯 Tomorrow's Plays</h2>
+        <nav class="nav-menu">
+            <a href="index.html" class="current">Current Plan</a>
+            <span class="nav-divider"></span>
+            <a href="archive/index.html">Archive</a>
+            <span class="nav-divider"></span>
+            <a href="archive/2026-02-11.html">Feb 11</a>
+            <a href="archive/2026-02-10.md">Feb 10</a>
+        </nav>
+
+        <div class="section">
+            <h2>Primary Setups</h2>
             
             <div class="play short">
-                <h3><span class="ticker">QNCX</span> Quince Therapeutics - Post-Spike Fade Short <span class="risk-badge risk-high">HIGH RISK</span></h3>
-                <div class="price">Closed $0.32 (+146% yesterday)</div>
+                <div class="ticker">QNCX</div>
+                <div class="price">Price: $7.20</div>
+                <h3>POST-SPIKE SHORT</h3>
                 <div class="play-details">
-                    <p><strong>Setup:</strong> Classic biotech parabolic pump - spiked 146% on Feb 10 with massive volume ($228M turnover)</p>
-                    <p><strong>Entry:</strong> Short on any gap up above $0.40 OR wait for first bounce after morning dump</p>
-                    <p><strong>Target:</strong> $0.15-$0.20 (reversion to pre-spike levels)</p>
-                    <p><strong>Stop:</strong> Above $0.50 (new breakout = thesis broken)</p>
-                    <p><strong>Size:</strong> Small position - penny stock with extreme volatility</p>
-                    <div class="notes">⚠️ Watch for continued unusual volume or news catalyst that could sustain the move. If it gaps DOWN at open, wait for bounce to $0.35-$0.40 range before shorting.</div>
+                    <p><strong>Thesis:</strong> +21% run yesterday on FDA BTD-= expiration due Feb 16. Short the euphoria, take profit as reality sets in.</p>
+                    <p><strong>Entry:</strong> $7.00-$7.50 (looking for opening gap fade)</p>
+                    <p><strong>Targets:</strong> $6.20, $5.50, $4.80</p>
+                    <p><strong>Stop:</strong> $8.00 (above yesterday's high)</p>
+                    <p><strong>Size:</strong> 5% account</p>
+                    <span class="risk-badge risk-high">High Risk</span>
                 </div>
-                <div class="links">
-                    <a href="https://finviz.com/quote.ashx?t=QNCX" target="_blank">Chart</a>
-                    <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=QNCX" target="_blank">SEC Filings</a>
-                </div>
+                <div class="notes">NTE: Watch volume at open. If gaps down, could reach targets faster. Beware of squeeze if it holds $7.50+.</div>
             </div>
 
             <div class="play short">
-                <h3><span class="ticker">BMNR</span> BitMine Immersion - Crypto Proxy Fade <span class="risk-badge risk-medium">MEDIUM RISK</span></h3>
-                <div class="price">Current: ~$20-25 (Down from $161 high)</div>
+                <div class="ticker">BMNR</div>
+                <div class="price">Price: $4.90</div>
+                <h3>CRYPTO NARRATIVE FADE</h3>
                 <div class="play-details">
-                    <p><strong>Setup:</strong> Ethereum treasury company (3.6M+ ETH) - already down 80%+ from highs</p>
-                    <p><strong>Entry:</strong> Monitor for any dead-cat bounce to $30-35 range to add to short</p>
-                    <p><strong>Target:</strong> $15 (next major support level)</p>
-                    <p><strong>Stop:</strong> Above $40 (invalidates downtrend)</p>
-                    <p><strong>Watch:</strong> ETH price action - if ETH rallies hard, BMNR will follow</p>
-                    <div class="notes">💡 Existing position tracking - look for any relief rally to add size. Beta ~10.69 so moves are amplified.</div>
+                    <p><strong>Thesis:</strong> Rallied 40% over past 3 days on 'crypto exposure' hype. Short the momentum exhaustion, target mean reversion.</p>
+                    <p><strong>Entry:</strong> $4.75-$5.25 (wait for signs of rollover)</p>
+                    <p><strong>Targets:</strong> $3.90, $3.20</p>
+                    <p><strong>Stop:</strong> $5.70</p>
+                    <p><strong>Size:</strong> 3% account</p>
+                    <span class="risk-badge risk-medium">Medium Risk</span>
                 </div>
-                <div class="links">
-                    <a href="https://finviz.com/quote.ashx?t=BMNR" target="_blank">Chart</a>
-                    <a href="https://coinmarketcap.com/currencies/ethereum/" target="_blank">ETH Price</a>
-                </div>
+                <div class="notes">NTE: No clear catalyst for move. Fade setup, not a defined short squeeze.</div>
             </div>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>📅 Tomorrow's Catalysts</h2>
+        <div class="section">
+            <h2>Key Catalysts This Week</h2>
             
             <div class="catalyst-item">
-                <h3>No Major Earnings Scheduled</h3>
-                <p style="color: #94a3b8;">Light earnings day - next big report is NVDA on Feb 15 (after close)</p>
+                <h3>NVIDIA Earnings - February 15, 2026</h3>
+                <p>Can influence broader market sentiment and AI/tech stocks. Watch for sympathetic moves in PLTR, AMD, TSM.</p>
             </div>
 
             <div class="catalyst-item">
-                <h3>⚠️ Watch: Economic Data</h3>
-                <p><strong>Time:</strong> Check economic calendar for any surprise releases</p>
-                <p style="color: #94a3b8;">Next major data: Retail Sales Feb 18 (08:30 ET)</p>
+                <h3>FDA Decision Calendar - Multiple BTDs</h3>
+                <p>Feb 16: QNCX, IGMS. Feb 18: PACB. Binary events with high volatility on decision days.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>📍 Existing Positions</h2>
-            
+        <div class="section">
+            <h2>Current Positions</h2>
             <table class="positions-table">
                 <thead>
                     <tr>
                         <th>Ticker</th>
                         <th>Type</th>
-                        <th>Current Price</th>
+                        <th>Position</th>
+                        <th>P&L</th>
                         <th>Status</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="ticker">BMNR</span></td>
-                        <td>Short</td>
-                        <td>~$20-25</td>
-                        <td>Down 80%+ from $161 high</td>
-                        <td>Hold - wait for bounce to add</td>
+                        <td>KEN PAXTON - NO 2026</td>
+                        <td>Polymarket</td>
+                        <td>11.386362 shares @ $0.44</td>
+                        <td>-$0.20 (down ~5%)</td>
+                        <td>Holding - Monitoring</td>
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>📆 Forward Calendar (Next 7 Days)</h2>
-            
-            <div class="catalyst-item">
-                <h3>Feb 15 (Saturday) - <span class="ticker">NVDA</span> NVIDIA Earnings</h3>
-                <p><strong>Time:</strong> After market close</p>
-                <p><strong>Expected Move:</strong> 5-8%</p>
-                <p><strong>Watch For:</strong> Data center revenue growth, Blackwell chip demand, guidance</p>
-                <p><strong>Historical Beat Rate:</strong> 85%</p>
-                <div class="links">
-                    <a href="https://investor.nvidia.com/" target="_blank">Investor Relations</a>
-                    <a href="https://www.earningswhispers.com/stocks/nvda" target="_blank">Estimates</a>
-                </div>
+        <div class="section">
+            <h2>Research & References</h2>
+            <div class="links">
+                <a href="https://www.fda.gov/drugs/development-approval-process-drugs/drug-and-biologic-calendar" target="_blank">FDA Calendar</a>
+                <a href="https://www.biopharmacatalyst.com/calendars/fda-calendar" target="_blank">Biopharma Catalyst</a>
+                <a href="https://polymarket.com/portfolio" target="_blank">Polymarket Portfolio</a>
             </div>
-
-            <div class="catalyst-item">
-                <h3>Feb 18 (Tuesday) - Retail Sales Data</h3>
-                <p><strong>Time:</strong> 08:30 ET</p>
-                <p><strong>Expected Move:</strong> SPY 1-2%</p>
-                <p><strong>Consensus:</strong> +0.3% MoM</p>
-                <p><strong>Watch For:</strong> Consumer spending strength, inflation signals</p>
-                <div class="links">
-                    <a href="https://www.forexfactory.com/calendar" target="_blank">Economic Calendar</a>
-                </div>
-            </div>
-
-            <div class="catalyst-item">
-                <h3>Feb 20 (Thursday) - FOMC Minutes</h3>
-                <p><strong>Time:</strong> 14:00 ET (2:00 PM)</p>
-                <p><strong>Expected Move:</strong> Market-wide volatility</p>
-                <p><strong>Watch For:</strong> Rate cut timing signals, inflation commentary</p>
-                <div class="links">
-                    <a href="https://www.federalreserve.gov/newsevents/calendar.htm" target="_blank">Fed Calendar</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>⚠️ Risk Management Rules</h2>
-            <ul style="list-style-position: inside; color: #cbd5e1;">
-                <li style="margin-bottom: 10px;">Max 2% risk per trade</li>
-                <li style="margin-bottom: 10px;">Cut losses at stop levels - NO exceptions</li>
-                <li style="margin-bottom: 10px;">Penny stocks (under $5): MAX 1% portfolio allocation</li>
-                <li style="margin-bottom: 10px;">Watch for halt risk on biotech names</li>
-                <li style="margin-bottom: 10px;">Scale out at targets - don't get greedy</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>This battleplan is for educational purposes only. Not financial advice.</p>
-            <p style="margin-top: 5px;">Always do your own research and manage risk appropriately.</p>
-        </footer>
+        </div>
     </div>
 </body>
 </html>

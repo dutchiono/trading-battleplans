@@ -1,23 +1,30 @@
 # Tuesday, February 11, 2026 - Intraday Trading Battleplan
 
-## Current Position: BMNR Short
-**Status:** HOLD or EXIT at open based on overnight action
-- Entry: $20.12 (3x consolidated position)
-- Current: $19.95 (+2.44% P&L)
-- Liquidation: $27.00
-- Alert: $19.00 (continuation signal)
+## Opportunity #1: BMNR (BioMarin) Short Setup
 
-**Exit Strategy:**
-- **If opens $19.50-$19.95:** Consider taking profit (+8-16% potential)
-- **If opens below $19.00:** Strong continuation - let it run to $18.50 target
-- **If gaps up above $20.50:** Cut losses immediately, you're underwater
+### Current Market Context
+BMNR recently experienced a significant price move and may offer short opportunities on any overnight weakness or gap-down scenarios.
+
+**Technical Levels to Watch:**
+- Resistance: $20.50-$21.00 (potential entry zone for shorts on strength)
+- Support: $19.00-$19.50 (first downside target)
+- Key breakdown level: $18.50 (strong continuation signal)
+- Risk level: $21.50+ (invalidates bearish thesis)
+
+**Trading Considerations:**
+- Watch overnight action and opening price behavior
+- **If opens weak ($19.50-$19.95):** Consider profit-taking on existing shorts or new entries with tight stops
+- **If opens below $19.00:** Strong bearish continuation setup - consider scaled entries
+- **If gaps up above $20.50:** Wait for better risk/reward, trend may have shifted
+
+**Position Sizing:** Standard risk management (1-2% account risk per trade)
 
 ---
 
-## New Opportunity #1: PHIO (Phio Pharmaceuticals) ⚠️ HIGH RISK
+## Opportunity #2: PHIO (Phio Pharmaceuticals) ⚠️ HIGH RISK
 
 ### The Setup
-**Catalyst:** Already happened - Phase 1b trial safety review completed yesterday (Feb 10)
+**Catalyst:** Phase 1b trial safety review completed yesterday (Feb 10)
 - Zero serious adverse events in 22 patients
 - 85% pathological response rate in highest dose group
 - 65% overall response rate for cutaneous squamous cell carcinoma
@@ -51,218 +58,80 @@
 5. ✅ Micro-cap with thin liquidity - prone to massive dumps
 
 **Red Flags:**
-- You'd be buying AFTER the parabolic move (classic trap)
+- Entry would be AFTER the parabolic move (classic trap)
 - No intraday catalyst tomorrow - just residual momentum
 - Biotech sector shows "buy rumor, sell news" pattern consistently
 - Microsoft earnings beat but dropped 7% - even good news gets sold in 2026 market
 
-### Trading Plan for PHIO
+### Trading Setup for PHIO
 **ONLY IF:** Opens flat or slightly green (+0-5%) and shows buying pressure in first 30 minutes
 
-**Entry:** $2.30-$2.50 (on pullback from opening volatility)
-**Position Size:** 25% of available capital (HIGH RISK trade)
-**Stop Loss:** $2.10 (-8-13% max loss)
-**Targets:**
+**Suggested Entry Zone:** $2.30-$2.50 (on pullback from opening volatility)
+**Suggested Position Size:** 25% max allocation for high-risk trades
+**Stop Loss Consideration:** Below $2.10 (-8-13% max loss)
+**Profit Targets:**
 - T1 (50% position): $2.80 (+12-17%) - take profit fast
 - T2 (remaining 50%): $3.20 (+28-39%) - if momentum continues
 
-**Exit Immediately If:**
+**Avoid Entry If:**
 - Opens -10% or more (momentum broken)
 - Can't hold $2.20 in first hour (weak hands dumping)
 - Volume dies off (no follow-through)
-
-**AVOID IF:** Opens with gap down or shows heavy selling pressure at open.
-
----
-
-## Opportunity #2: TMUS (T-Mobile) - EARNINGS PLAY
-
-### The Setup
-**Catalyst:** Earnings report BEFORE market open (Feb 11)
-**Expectations:** 
-- EPS: $2.03 consensus
-- Revenue: $24.27B
-- Historical: Beats earnings 9 out of 10 times (90% beat rate, +9.09% average surprise)
-
-### Crowd Expectations
-- **Street Sentiment:** Bullish - consistent beat history
-- **Revenue Drivers:** 5G expansion, postpaid subscriber growth
-- **Risks:** Price competition, rising network investment costs
-
-### Technical Setup
-- **Pre-earnings price:** ~$160-165 range (estimate)
-- **Analyst consensus:** Moderate Buy
-- **Average PT:** Not specified in data
-
-### "Priced In" Risk Assessment
-**🟡 MEDIUM RISK - 50% Priced In**
-
-**Reasons:**
-1. ✅ Strong beat history is KNOWN - market expects good numbers
-2. ✅ 2026 pattern: Stocks drop even on beats (Microsoft -7% example)
-3. ❌ Pre-market report = volatility at open (you can react)
-4. ❌ If beats AND raises guidance = potential upside surprise
-
-### Trading Plan for TMUS
-**DO NOT pre-position** - wait for earnings announcement
-
-**LONG Setup (if earnings beat + strong guidance):**
-- Wait for initial volatility (first 15-30 min)
-- Entry: On pullback after initial spike (buy the dip pattern)
-- Position Size: 50% of capital (lower risk than biotech)
-- Stop: -3% from entry
-- Target: +5-8% intraday move
-
-**SHORT Setup (if disappoints or "sell the news"):**
-- If beats but stock drops anyway (guidance concerns)
-- Entry: After initial pop fades, breaks below pre-market support
-- Position Size: 50% of capital
-- Stop: +2% above entry
-- Target: -5-8% from entry point
-
-**SKIP IF:** Inline results with no guidance change (likely choppy, no edge)
+- Opens with gap down or heavy selling pressure
 
 ---
 
-## Opportunity #3: CSCO (Cisco) - EARNINGS AFTER CLOSE ❌ SKIP
+## Forward Calendar: Upcoming Catalysts
 
-### Why Skip
-**Catalyst:** Earnings report AFTER market close (Feb 11)
-- You specifically said no more overnight/after-hours plays
-- Recent upgrade to $95 PT already moved stock +2.3% Monday
-- Expectations: EPS $1.02, Revenue $15.11B
-- Bullish sentiment but no intraday opportunity
+### This Week (Feb 11-15, 2026)
+- **Today (Feb 11):** Potential BMNR continuation, PHIO post-spike decision
+- **Wed Feb 12:** Watch for any biotech conference presentations
+- **Thu Feb 13:** Economic data releases (CPI, jobless claims)
+- **Fri Feb 14:** Market closed early (Valentine's Day - verify)
 
-**Skip this - overnight volatility risk you're avoiding**
+### Next Week (Feb 18-22, 2026)
+- **Presidents Day (Feb 17):** Market closed Monday
+- **NVDA Earnings (Projected ~Feb 19):** High volatility expected
+- Watch for FDA calendar updates
 
----
-
-## Master Gameplan for Tuesday, Feb 11
-
-### Pre-Market (7:00-9:30 AM)
-1. **Check BMNR overnight price** - decide keep or exit
-2. **Wait for TMUS earnings** - analyze beat/miss and guidance
-3. **Monitor PHIO pre-market** - is it holding gains or dumping?
-
-### Market Open (9:30-10:00 AM) - VOLATILITY HOUR
-**Priority Actions:**
-1. **BMNR Decision:**
-   - Below $19.00? Hold for $18.50 target
-   - $19.50-$19.95? Close for profit
-   - Above $20.50? Cut immediately
-
-2. **TMUS Reaction:**
-   - Monitor first 15 min for direction
-   - Enter on pullback if bullish setup
-   - Or short if "sell the news" pattern
-
-3. **PHIO Watch:**
-   - If holding above $2.30 with volume = potential entry
-   - If dumping = avoid completely
-
-### Mid-Day (10:00 AM - 2:00 PM) - EXECUTION WINDOW
-- **Best trading hours:** 10:00-11:30 AM (post-volatility clarity)
-- Avoid 12:00-1:00 PM (lunch doldrums, low volume)
-- **Afternoon setup:** 2:00-3:00 PM (potential second wave moves)
-
-### Final Hour (3:00-4:00 PM) - CLOSE POSITIONS
-- **DO NOT hold overnight unless planned**
-- Close any day trades 30 min before close
-- Take profits - don't get greedy
+### Beyond (Feb 23 - Mar 10, 2026)
+- Q1 earnings season ramp-up
+- PHIO FDA submission target (Q2 2026 - months away)
+- Monitor biotech sector for pattern shifts
 
 ---
 
-## Risk Management Rules
-
-### Position Sizing
-- **Total capital at risk:** Max 50% across all positions
-- **Per trade:** 25% high risk (PHIO), 50% medium risk (TMUS)
-- **Never full port in one trade**
-
-### Stop Losses
-- **Hard stops on every trade** - no exceptions
-- PHIO: -10% max loss
-- TMUS: -3% max loss
-- BMNR: -5% from current (below $18.95)
-
-### Profit Taking
-- **Take 50% off at first target** - lock in gains
-- Let remaining 50% run to second target
-- If hits second target, take 75% and let 25% trail
-
-### Red Flags to EXIT
-1. Volume dries up mid-day (no follow-through)
-2. Broad market dumps (SPY/QQQ -1%+)
-3. Your thesis breaks (support fails, news contradicts setup)
-4. Hitting stop loss - no averaging down
+## Key Links
+- [PHIO Chart - TradingView](https://www.tradingview.com/chart/?symbol=NASDAQ:PHIO)
+- [BMNR Chart - TradingView](https://www.tradingview.com/chart/?symbol=NASDAQ:BMNR)
+- [FDA Calendar](https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/calendar)
+- [Earnings Whispers](https://www.earningswhispers.com/calendar)
+- [Finviz Screener - Biotech Movers](https://finviz.com/screener.ashx?v=111&f=sec_healthcare,sh_price_u10,ta_change_u40)
 
 ---
 
-## Best Play Ranking (Personal Recommendation)
-
-### 🥇 #1: TMUS Earnings Reaction (IF Strong Beat + Guidance)
-**Why:** 
-- Intraday catalyst during market hours
-- 90% historical beat rate
-- Can react to news, not gambling overnight
-- Medium risk/reward
-
-**Risk Level:** 🟡 Medium
+## Risk Management Guidelines
+- Max position size: 25% per trade (micro-caps and high-risk setups)
+- Stop losses mandatory on all entries
+- Take profits at predetermined targets - avoid greed
+- If 2 consecutive losses, reduce size by 50%
+- Daily loss limit: 15% of account (example guideline)
+- Never risk more than 1-2% per trade on speculative plays
 
 ---
 
-### 🥈 #2: BMNR Hold/Manage Existing Position
-**Why:**
-- Already in profit
-- Clear technical levels
-- Manageable risk with defined exits
-
-**Risk Level:** 🟢 Low (already positioned)
-
----
-
-### 🥉 #3: PHIO Momentum Trade (ONLY if setup perfect)
-**Why:**
-- High risk/reward if continuation
-- But likely already topped out
-- Only trade if strict entry conditions met
-
-**Risk Level:** 🔴 High
+## Trading Psychology Reminders
+- **FOMO is the enemy:** Missing a move is better than chasing bad entries
+- **Post-spike trades:** 80% are traps - extreme caution required
+- **Biotech volatility:** Micro-caps can swing 20-50% intraday
+- **News-driven moves:** Usually priced in by next day's open
+- **Risk first, reward second:** Protect capital above all else
 
 ---
 
-## What I Would Do (If This Were My Money)
-
-1. **BMNR:** Exit at open if price $19.50-$19.95 for +8-16% profit. **Take the win.**
-
-2. **TMUS:** Watch earnings reaction. If strong beat + raised guidance + stock pops = wait for pullback and enter long for 5-8% scalp.
-
-3. **PHIO:** **SKIP ENTIRELY.** The move happened yesterday. You'd be chasing a parabolic move after +51% - that's how retail loses money. The "priced in" risk is too high.
-
-4. **Cash:** If no clean setups by 11 AM, **sit in cash**. Not every day has good trades. Forced trades = losses.
+**Last Updated:** Tuesday, February 11, 2026 at 9:22 PM EST  
+**Next Update:** Wednesday, February 12, 2026 at 8:00 AM EST (automated)
 
 ---
 
-## Key Wisdom
-
-**"Buy the rumor, sell the news"** - PHIO is the "news" phase. The rumor was weeks ago.
-
-**"Never chase parabolas"** - That +51% move on PHIO? The smart money sold into that. Don't be the exit liquidity.
-
-**"Plan your trade, trade your plan"** - Write down entry/exit BEFORE market open. Emotion kills profits.
-
-**"The best trade is sometimes no trade"** - If nothing meets your criteria by 11 AM, close BMNR with profit and enjoy the win.
-
----
-
-## Tomorrow Morning Checklist
-
-- [ ] Check BMNR pre-market price
-- [ ] Read TMUS earnings release + guidance
-- [ ] Check PHIO pre-market volume + price action
-- [ ] Check SPY/QQQ futures (broad market direction)
-- [ ] Set alerts for key levels (BMNR $19.00, PHIO $2.20)
-- [ ] Review stop losses on all positions
-- [ ] Have exit plan written down BEFORE placing trades
-
-**Good luck. Trade the plan, not the emotion.** 🎯
+**Disclaimer:** This battleplan provides educational trading ideas and market analysis only. These are NOT personal trade recommendations. Always conduct your own research and risk assessment before entering any position. Past performance does not guarantee future results.

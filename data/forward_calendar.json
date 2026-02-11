@@ -1,0 +1,94 @@
+{
+  "updated_at": "2026-02-11T01:59:00Z",
+  "catalysts": [
+    {
+      "date": "2026-02-11",
+      "ticker": "TMUS",
+      "company": "T-Mobile",
+      "catalyst_type": "earnings",
+      "time": "pre_market",
+      "expected_move": "3-5%",
+      "notes": "Q4 earnings - 90% historical beat rate",
+      "watch_for": "Subscriber growth and 5G rollout progress",
+      "historical_beat_rate": 0.90,
+      "links": {
+        "earnings_call": "https://investor.t-mobile.com/",
+        "estimates": "https://www.earningswhispers.com/stocks/tmus"
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "catalyst_type": "earnings",
+      "time": "after_close",
+      "expected_move": "5-8%",
+      "notes": "Q4 results - AI data center revenue key metric",
+      "watch_for": "Data center revenue growth, Blackwell chip demand, guidance",
+      "historical_beat_rate": 0.85,
+      "links": {
+        "earnings_call": "https://investor.nvidia.com/",
+        "estimates": "https://www.earningswhispers.com/stocks/nvda"
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "ticker": "SPY",
+      "company": "S&P 500",
+      "catalyst_type": "economic_data",
+      "time": "08:30",
+      "expected_move": "1-2%",
+      "notes": "January Retail Sales - consensus +0.3% MoM",
+      "watch_for": "Consumer spending strength, inflation signals",
+      "links": {
+        "calendar": "https://www.forexfactory.com/calendar"
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "ticker": "FOMC",
+      "company": "Federal Reserve",
+      "catalyst_type": "fomc_minutes",
+      "time": "14:00",
+      "expected_move": "market_wide",
+      "notes": "January FOMC meeting minutes release",
+      "watch_for": "Rate cut timing signals, inflation commentary",
+      "links": {
+        "fed": "https://www.federalreserve.gov/newsevents/calendar.htm"
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "ticker": "AAPL",
+      "company": "Apple",
+      "catalyst_type": "product_launch",
+      "time": "10:00",
+      "expected_move": "2-4%",
+      "notes": "Spring Event - rumored new iPad Pro with M3 chip",
+      "watch_for": "New hardware announcements, services updates",
+      "links": {
+        "apple_events": "https://www.apple.com/apple-events/"
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "ticker": "PHIO",
+      "company": "Phio Pharmaceuticals",
+      "catalyst_type": "fda_submission",
+      "time": "by_date",
+      "expected_move": "unknown",
+      "notes": "Q2 2026 - Expected FDA submission for PH-762 skin cancer trial",
+      "watch_for": "Submission announcement, trial data release",
+      "probability": "70%",
+      "links": {
+        "clinical_trials": "https://clinicaltrials.gov/"
+      }
+    }
+  ],
+  "notes": [
+    "This calendar is manually curated and updated",
+    "Date ranges (Q2 2026) are estimates - watch for specific date announcements",
+    "Expected moves are based on historical volatility and option implied moves",
+    "Times are in Eastern Time (ET)"
+  ]
+}

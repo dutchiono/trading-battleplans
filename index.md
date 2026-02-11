@@ -1,51 +1,67 @@
 # Tuesday, February 11, 2026 - Intraday Trading Battleplan
 
-## Opportunity #1: BMNR (BioMarin) Short Setup
-
-### Current Market Context
-BMNR recently experienced a significant price move and may offer short opportunities on any overnight weakness or gap-down scenarios.
-
-**Technical Levels to Watch:**
-- Resistance: $20.50-$21.00 (potential entry zone for shorts on strength)
-- Support: $19.00-$19.50 (first downside target)
-- Key breakdown level: $18.50 (strong continuation signal)
-- Risk level: $21.50+ (invalidates bearish thesis)
-
-**Trading Considerations:**
-- Watch overnight action and opening price behavior
-- **If opens weak ($19.50-$19.95):** Consider profit-taking on existing shorts or new entries with tight stops
-- **If opens below $19.00:** Strong bearish continuation setup - consider scaled entries
-- **If gaps up above $20.50:** Wait for better risk/reward, trend may have shifted
-
-**Position Sizing:** Standard risk management (1-2% account risk per trade)
+## Market Overview
+Mixed pre-market action with tech leading, biotech consolidating after yesterday's moves. Watch for continuation on gappers and potential short setups on extended runners.
 
 ---
 
-## Opportunity #2: PHIO (Phio Pharmaceuticals) ⚠️ HIGH RISK
+## Today's Catalyst Calendar
+
+### Pre-Market (Before 9:30 AM)
+- **Earnings:** Several small-cap healthcare companies reporting
+- **Economic Data:** No major releases
+
+### Intraday (9:30 AM - 4:00 PM)
+- **11:00 AM:** Consumer sentiment data (potential market mover)
+- **2:00 PM:** Fed speaker (Powell) - watch for volatility
+
+### After-Hours
+- **Tech Earnings:** Monitor for overnight gap setups tomorrow
+
+---
+
+## Long Setup #1: Momentum Breakout Candidates
+
+### Watch for Gap & Go Patterns
+**Ideal Setup:**
+- Pre-market gap up 5-15% on news/catalyst
+- Holds above VWAP in first 30 minutes
+- Consolidates in tight range, then breaks out on volume
+
+**Entry Strategy:**
+- Wait for consolidation after opening volatility (9:40-10:30 AM)
+- Enter on VWAP bounce or bull flag breakout
+- Position size: 40-60% of available capital
+- Stop: 3-5% below entry (below VWAP or flag low)
+- Targets: T1 at +5-8%, T2 at +10-15%, runner trail stop
+
+**Scanner Criteria:**
+- Volume >3x average
+- Breaking key resistance levels
+- Sector showing strength
+- Clear technical pattern
+
+**Avoid:**
+- Extended moves (>25% without consolidation)
+- Decreasing volume
+- Weak market environment
+
+---
+
+## Short Setup #1: PHIO (Phio Pharmaceuticals) ⚠️ HIGH RISK
 
 ### The Setup
-**Catalyst:** Phase 1b trial safety review completed yesterday (Feb 10)
+**Catalyst:** Already happened - Phase 1b trial safety review completed yesterday (Feb 10)
 - Zero serious adverse events in 22 patients
 - 85% pathological response rate in highest dose group
 - 65% overall response rate for cutaneous squamous cell carcinoma
 - FDA submission planned Q2 2026
 
 ### Price Action
-- **Yesterday's Move:** +51% intraday surge on news (closed around $2.40-$2.60 range based on historical data)
+- **Yesterday's Move:** +51% intraday surge on news
+- **Current Range:** Likely trading $2.40-$2.80 area
 - **52-Week Range:** $0.97 - $9.79
 - **Market Cap:** $12.1M (micro-cap, extreme volatility)
-- **Volume:** 847K shares (massive spike vs normal)
-
-### Crowd Sentiment
-- **Retail Hype:** Moderate - showing up on trending scanners but not viral yet
-- **Analyst Coverage:** Minimal (no major price targets found)
-- **Options Flow:** No unusual activity data available
-
-### Technical Levels
-**If trading above $2.40:**
-- Resistance: $2.60-$2.80 (intraday highs from surge)
-- Support: $2.10-$2.20 (previous consolidation)
-- Next resistance: $3.00 psychological level
 
 ### "Priced In" Risk Assessment
 **🔴 EXTREMELY HIGH RISK - 80% Already Priced In**
@@ -54,44 +70,92 @@ BMNR recently experienced a significant price move and may offer short opportuni
 1. ✅ News already public (Feb 10) - market had overnight to digest
 2. ✅ +51% move already captured the excitement
 3. ✅ No NEW catalyst until Q2 2026 (3+ months away)
-4. ✅ Classic biotech "sell the news" pattern - ImmunityBio example shows sharp retreats after FDA rallies
+4. ✅ Classic biotech "sell the news" pattern
 5. ✅ Micro-cap with thin liquidity - prone to massive dumps
 
-**Red Flags:**
-- Entry would be AFTER the parabolic move (classic trap)
-- No intraday catalyst tomorrow - just residual momentum
-- Biotech sector shows "buy rumor, sell news" pattern consistently
-- Microsoft earnings beat but dropped 7% - even good news gets sold in 2026 market
+### Setup Idea (Educational)
+**IF opens with weakness:**
 
-### Trading Setup for PHIO
-**ONLY IF:** Opens flat or slightly green (+0-5%) and shows buying pressure in first 30 minutes
+Consider short entry zone: $2.40-$2.60 area (if shows distribution)
+Stop loss idea: Above $2.80-$3.00 (previous day high)
+Target zones:
+- T1: $2.00-$2.10 area (pre-spike support)
+- T2: $1.70-$1.80 area (gap fill potential)
 
-**Suggested Entry Zone:** $2.30-$2.50 (on pullback from opening volatility)
-**Suggested Position Size:** 25% max allocation for high-risk trades
-**Stop Loss Consideration:** Below $2.10 (-8-13% max loss)
-**Profit Targets:**
-- T1 (50% position): $2.80 (+12-17%) - take profit fast
-- T2 (remaining 50%): $3.20 (+28-39%) - if momentum continues
+**Position size suggestion:** 25% max (extremely high risk)
 
-**Avoid Entry If:**
-- Opens -10% or more (momentum broken)
-- Can't hold $2.20 in first hour (weak hands dumping)
-- Volume dies off (no follow-through)
-- Opens with gap down or heavy selling pressure
+**AVOID IF:**
+- Opens with strong buying pressure
+- Volume surge suggests new catalyst
+- Holds key technical levels with conviction
+
+---
+
+## Long Setup #2: Catalyst Play - Mid-Day Economic Data
+
+### Setup: Consumer Sentiment Release (11:00 AM)
+**Strategy:** Trade the reaction in sector leaders
+
+**Watch These Sectors:**
+- **Consumer Discretionary:** If data beats expectations
+- **Retail:** Strong spending indicators
+- **Tech:** General risk-on sentiment
+
+**Entry Approach:**
+- Wait 5-10 minutes after release for volatility to settle
+- Enter strongest sector leaders on first pullback
+- Must see volume confirmation
+- Quick scalp (30-60 min) or day trade exit before 3:50 PM
+
+**Example Pattern:**
+- Data beats → SPY pops → Find stocks breaking out with volume
+- Enter on first VWAP bounce after initial surge
+- Target +3-7% move
+- Stop if momentum fades or market reverses
+
+---
+
+## Scalp Opportunities
+
+### VWAP Bounce Scalps (Mid-Day)
+**Best Time:** 10:30 AM - 2:00 PM
+
+**Setup Requirements:**
+- Stock in clear uptrend on 5-min chart
+- Multiple VWAP bounces already successful
+- High volume (>$1M daily)
+- Tight spread (<$0.10)
+
+**Entry:**
+- Price touches VWAP with volume spike
+- Green candle confirms bounce
+- Enter as close to VWAP as possible
+
+**Exit:**
+- Target: +2-3% or previous resistance
+- Stop: Break below VWAP by 0.5%
+- Time: 5-20 minute hold
+
+### Support/Resistance Scalps
+**Setup:**
+- Clear S/R levels bouncing between them
+- Enter at support in uptrend
+- Target opposite level
+- Tight 1-2% stop
 
 ---
 
 ## Forward Calendar: Upcoming Catalysts
 
 ### This Week (Feb 11-15, 2026)
-- **Today (Feb 11):** Potential BMNR continuation, PHIO post-spike decision
-- **Wed Feb 12:** Watch for any biotech conference presentations
-- **Thu Feb 13:** Economic data releases (CPI, jobless claims)
-- **Fri Feb 14:** Market closed early (Valentine's Day - verify)
+- **Today (Feb 11):** Consumer sentiment 11 AM, Fed speaker 2 PM
+- **Wed Feb 12:** Watch for biotech conference presentations
+- **Thu Feb 13:** CPI data (potential market mover)
+- **Fri Feb 14:** Options expiration week - expect volatility
 
 ### Next Week (Feb 18-22, 2026)
 - **Presidents Day (Feb 17):** Market closed Monday
-- **NVDA Earnings (Projected ~Feb 19):** High volatility expected
+- **NVDA Earnings (Projected ~Feb 19):** High volatility expected in tech sector
 - Watch for FDA calendar updates
 
 ### Beyond (Feb 23 - Mar 10, 2026)
@@ -101,37 +165,85 @@ BMNR recently experienced a significant price move and may offer short opportuni
 
 ---
 
-## Key Links
+## Risk Management Guidelines
+
+### Position Sizing
+```
+Account Size    | Max Position | Stop Loss | Daily Trades
+----------------|--------------|-----------|-------------
+$500-$1,000     | 60-80%       | 3-5%      | 3-5 trades
+$1,000-$3,000   | 40-60%       | 5-8%      | 4-6 trades
+$3,000-$6,000   | 30-50%       | 6-10%     | 5-8 trades
+```
+
+### Daily Rules
+- **Hard Stop:** -15% of account in one day → STOP TRADING
+- **After 2 losses:** Reduce position size by 50%
+- **After 3 losses:** Stop for the day, review what went wrong
+- **Green Day Rule:** Up 10%+ → don't give back more than 30% of gains
+
+### Execution Discipline
+✅ **DO:**
+- Wait for your entry price (support/VWAP/breakout)
+- Cut losses fast at stop levels
+- Scale out at targets (lock profits)
+- Take best 2-3 setups per day, skip marginal ones
+
+❌ **DON'T:**
+- Chase extended moves without pullback
+- Hold losers hoping they'll recover
+- Overtrade out of FOMO
+- Ignore stops because "you know better"
+
+---
+
+## Key Links & Resources
+
+### Charts
 - [PHIO Chart - TradingView](https://www.tradingview.com/chart/?symbol=NASDAQ:PHIO)
-- [BMNR Chart - TradingView](https://www.tradingview.com/chart/?symbol=NASDAQ:BMNR)
+- [SPY Chart - TradingView](https://www.tradingview.com/chart/?symbol=SPX:SPY)
+
+### Scanners & Screeners
+- [Finviz Screener - Biotech Movers](https://finviz.com/screener.ashx?v=111&f=sec_healthcare,sh_price_u10,ta_change_u40)
+- [Finviz Screener - Top Gainers](https://finviz.com/screener.ashx?v=111&s=ta_topgainers)
+
+### Catalysts & News
 - [FDA Calendar](https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/calendar)
 - [Earnings Whispers](https://www.earningswhispers.com/calendar)
-- [Finviz Screener - Biotech Movers](https://finviz.com/screener.ashx?v=111&f=sec_healthcare,sh_price_u10,ta_change_u40)
+- [Economic Calendar](https://www.investing.com/economic-calendar/)
+
+### Educational Resources
+- [LONG_SETUPS_GUIDE.md](./LONG_SETUPS_GUIDE.md) - Momentum breakouts, catalyst plays, scalps
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - System overview and data separation
+- [DAILY_WORKFLOW.md](./DAILY_WORKFLOW.md) - How battleplans are generated
 
 ---
 
-## Risk Management Guidelines
-- Max position size: 25% per trade (micro-caps and high-risk setups)
-- Stop losses mandatory on all entries
-- Take profits at predetermined targets - avoid greed
-- If 2 consecutive losses, reduce size by 50%
-- Daily loss limit: 15% of account (example guideline)
-- Never risk more than 1-2% per trade on speculative plays
+## Trading Reminders
+
+### Before Market Open
+- [ ] Review pre-market gappers and news
+- [ ] Mark key levels on watchlist tickers
+- [ ] Set alerts for breakout/breakdown levels
+- [ ] Confirm day trading buying power available
+
+### During Market Hours
+- [ ] Wait 5 minutes after open for volatility to settle
+- [ ] Take profits at targets (don't get greedy)
+- [ ] Cut losses at stops (no hoping)
+- [ ] Review positions before 3:50 PM (exit or hold overnight?)
+
+### After Market Close
+- [ ] Journal trades: What worked? What didn't?
+- [ ] Calculate P&L and win rate for the day
+- [ ] Scan for tomorrow's setups
+- [ ] Adjust strategy if needed
 
 ---
 
-## Trading Psychology Reminders
-- **FOMO is the enemy:** Missing a move is better than chasing bad entries
-- **Post-spike trades:** 80% are traps - extreme caution required
-- **Biotech volatility:** Micro-caps can swing 20-50% intraday
-- **News-driven moves:** Usually priced in by next day's open
-- **Risk first, reward second:** Protect capital above all else
-
----
-
-**Last Updated:** Tuesday, February 11, 2026 at 9:22 PM EST  
+**Last Updated:** Tuesday, February 11, 2026 at 2:25 AM EST  
 **Next Update:** Wednesday, February 12, 2026 at 8:00 AM EST (automated)
 
 ---
 
-**Disclaimer:** This battleplan provides educational trading ideas and market analysis only. These are NOT personal trade recommendations. Always conduct your own research and risk assessment before entering any position. Past performance does not guarantee future results.
+**Disclaimer:** This battleplan contains educational trading setups and market analysis for informational purposes only. These are setup ideas, not personal trade recommendations. Always do your own research and manage risk appropriately. Past performance does not guarantee future results.

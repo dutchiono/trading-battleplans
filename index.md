@@ -185,11 +185,39 @@
 - **QQQ:** Watch 520 support / 525 resistance
 - **IWM:** Watch 220 support / 223 resistance
 
-### Tools & Charts
-- [Finviz Screener - Top Gainers](https://finviz.com/screener.ashx?v=111&f=ta_change_u3&o=-change)
-- [Finviz Screener - Top Losers](https://finviz.com/screener.ashx?v=111&f=ta_change_d3&o=change)
-- [StockCharts - Market Summary](https://stockcharts.com/freecharts/marketsummary.html)
-- [Earnings Whispers Calendar](https://www.earningswhispers.com/calendar)
+### 🎧 Earnings Calls & Conference Call Audio
+- [Seeking Alpha Earnings Call Transcripts](https://seekingalpha.com/earnings/earnings-call-transcripts) - Live transcripts + audio replays
+- [AlphaStreet Earnings Calls](https://www.alphastreet.com/earnings-call-transcripts/) - Full transcripts + dial-in numbers
+- [Company IR Pages](https://www.google.com/search?q=investor+relations) - Direct from company websites (most reliable for dial-in info)
+
+### 📊 Real-Time Scanners & Movers
+- [Finviz Screener - Top Gainers](https://finviz.com/screener.ashx?v=111&f=ta_change_u3&o=-change) - Stocks up 3%+ today
+- [Finviz Screener - Top Losers](https://finviz.com/screener.ashx?v=111&f=ta_change_d3&o=change) - Stocks down 3%+ today
+- [Finviz Pre-Market Futures](https://finviz.com/futures.ashx) - Futures + pre-market overview
+- [Benzinga Pre-Market Movers](https://www.benzinga.com/premarket) - Biggest gainers/losers before open
+- [MarketWatch Pre-Market Screener](https://www.marketwatch.com/tools/screener/premarket) - Real-time pre-market data
+
+### 📅 Catalyst Calendars
+- [Earnings Whispers Calendar](https://www.earningswhispers.com/calendar) - Earnings with expected moves
+- [Biopharmcatalyst FDA Calendar](https://www.biopharmcatalyst.com/calendars/fda-calendar) - FDA decision dates (PDUFA)
+- [Investing.com Economic Calendar](https://www.investing.com/economic-calendar/) - Fed events, economic data releases
+- [Briefing.com Economic Calendar](https://www.briefing.com/calendars/economic) - Clean economic data tracker
+
+### 📈 Charts & Technical Analysis
+- [TradingView](https://www.tradingview.com/) - Best charting platform (free tier works great)
+- [StockCharts - Market Summary](https://stockcharts.com/freecharts/marketsummary.html) - Market breadth, sector heatmaps
+- [FinViz Chart View](https://finviz.com/quote.ashx?t=SPY) - Quick multi-timeframe charts
+
+### 🔍 Research & Due Diligence
+- [SEC Edgar Filings](https://www.sec.gov/edgar/searchedgar/companysearch.html) - 8-Ks, 10-Qs, S-1s
+- [Benzinga News Feed](https://www.benzinga.com/news) - Real-time breaking news
+- [Twitter Advanced Search](https://twitter.com/search-advanced) - Search "$TICKER" for real-time sentiment
+- [Stocktwits](https://stocktwits.com/) - Social sentiment + message boards
+
+### 🧮 Options & Volatility
+- [Barchart Unusual Options Activity](https://www.barchart.com/options/unusual-activity/stocks) - Whale options flow
+- [Market Chameleon](https://marketchameleon.com/) - IV percentile, skew, earnings moves
+- [CBOE Volatility Index (VIX)](https://www.cboe.com/tradable_products/vix/) - Market fear gauge
 
 ---
 

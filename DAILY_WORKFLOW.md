@@ -5,19 +5,35 @@ Automated system that generates daily trading battleplans at 8 AM ET with:
 - Today's intraday catalysts (earnings, FDA decisions, economic data)
 - Post-spike short opportunities (biotech +40% moves)
 - Forward calendar (upcoming multi-day catalysts)
-- Your existing positions with updated P&L
-- Relevant links (charts, news, filings)
+- Market analysis and setup ideas
+- Risk management guidelines
+
+**IMPORTANT:** The public battleplan contains ONLY market analysis and setup ideas. Your actual positions, entry prices, and P&L are tracked privately in Nebula and NEVER published to GitHub.
+
+---
 
 ## Architecture
 
 ### 1. Data Sources
+
+#### PUBLIC Market Intelligence (Published to GitHub)
 - **Catalyst Calendar:** Benzinga Calendar API, Earnings Whispers, FDA calendar
 - **Spike Scanner:** Finviz screener for +40% biotech moves
-- **Position Tracking:** Ostium API (BMNR short), Polymarket API
-- **Market Data:** Yahoo Finance, TradingView
-- **News:** Benzinga News API, Reuters
+- **Market Data:** Yahoo Finance, TradingView (for chart links)
+- **News:** Benzinga News API, Reuters, web search
+- **Sentiment:** Social media trends, retail interest indicators
 
-### 2. Daily Workflow (8:00 AM ET Trigger)
+#### PRIVATE Position Tracking (Nebula Only - NEVER Published)
+- **Position Tracking:** Ostium API (BMNR short), Polymarket API
+- **Portfolio Monitoring:** CoinGecko (crypto holdings)
+- **Personal P&L:** Calculated from private position data
+- **Trade Journal:** Your actual entries, exits, and performance
+
+---
+
+## Daily Workflow (8:00 AM ET Trigger)
+
+### Phase 1: Gather PUBLIC Market Intelligence
 
 ```
 Step 1: Pull Today's Catalysts
@@ -26,40 +42,96 @@ Step 1: Pull Today's Catalysts
   ├─ Economic data releases (during market hours)
   └─ Analyst presentations/conferences
 
-Step 2: Scan for Post-Spike Shorts
+Step 2: Scan for Post-Spike Short Opportunities
   ├─ Run Biotech Spike Scanner
   ├─ Filter: +40% moves from yesterday
-  ├─ Check float, SI, borrow availability
-  └─ Calculate entry/target/stop levels
+  ├─ Research: float, SI, borrow availability, catalyst
+  ├─ Analyze: "priced in" risk, crowd sentiment
+  └─ Calculate: generic entry/target/stop ideas (NOT your actual trades)
 
-Step 3: Update Existing Positions
-  ├─ BMNR short position (Ostium API)
-  ├─ Polymarket positions (if any)
-  ├─ Crypto positions (Core Portfolio script)
-  └─ Calculate P&L and risk levels
+Step 3: Load Forward Calendar
+  ├─ Upcoming catalysts (3-30 days out)
+  ├─ Filter for relevance to today's market
+  └─ Create "watch list" section
+```
 
-Step 4: Check Forward Calendar
-  ├─ Load upcoming catalysts (3-30 days out)
-  ├─ Filter for relevance to today
-  └─ Add "watch list" section
+### Phase 2: Generate PUBLIC Battleplan
 
-Step 5: Generate Battleplan
-  ├─ Rank opportunities by risk/reward
-  ├─ Add relevant links for each play
-  ├─ Include technical charts
-  ├─ Set alerts and timing strategy
-  └─ Format as markdown with sections
+```
+Step 4: Create Educational Content (index.md)
+  ├─ Format opportunities as setup ideas (not personal trades)
+  ├─ Include:
+  │   ├─ Catalyst description and timing
+  │   ├─ Technical levels (support/resistance)
+  │   ├─ Risk assessment and "priced in" analysis
+  │   ├─ Generic entry/exit ideas
+  │   ├─ Crowd sentiment indicators
+  │   └─ Relevant links (charts, news, filings)
+  │
+  ├─ Use advisory language:
+  │   ✅ "Watch for entries around..."
+  │   ✅ "Consider scaling in if..."
+  │   ✅ "This setup offers..."
+  │   ✅ "Risk/reward suggests..."
+  │   ❌ "I entered at..."
+  │   ❌ "My position is..."
+  │   ❌ "My P&L shows..."
+  │
+  └─ Add risk management section (generic guidelines)
+```
 
-Step 6: Publish to GitHub Pages
-  ├─ Update index.md with today's plan
-  ├─ Archive yesterday's plan to /archive
+### Phase 3: Update PRIVATE Position Tracker
+
+```
+Step 5: Track Your Actual Trades (Nebula Only)
+  ├─ Run BMNR Short Tracker (Ostium API)
+  ├─ Run Core Portfolio Tracker (CoinGecko)
+  ├─ Update other position monitors
+  ├─ Calculate current P&L on all positions
+  ├─ Update data/private_positions.json
+  ├─ Add trade journal notes
+  └─ NEVER commit these files to GitHub
+```
+
+**Private Position Data Structure:**
+```json
+{
+  "last_updated": "2026-02-11T08:00:00Z",
+  "positions": [
+    {
+      "ticker": "BMNR",
+      "type": "short",
+      "entry_price": 20.12,
+      "current_price": 19.95,
+      "size": 150,
+      "unrealized_pnl_pct": 2.44,
+      "stop_loss": 21.50,
+      "target": 18.50,
+      "notes": "Post-spike short from Feb 8 pump"
+    }
+  ]
+}
+```
+
+### Phase 4: Publish PUBLIC Battleplan
+
+```
+Step 6: Deploy to GitHub Pages
+  ├─ Archive yesterday's index.md to archive/YYYY-MM-DD.md
+  ├─ Update index.md with today's PUBLIC battleplan
+  ├─ Verify no private data in commit
   ├─ Commit and push to main branch
   └─ Wait for GitHub Pages build (2-5 min)
+```
 
-Step 7: Notify User
-  ├─ Post summary in Nebula chat
-  ├─ Send email/Telegram alert (optional)
-  └─ Include link to live battleplan
+### Phase 5: Notify User
+
+```
+Step 7: Summary in Nebula
+  ├─ Public battleplan summary (what was published)
+  ├─ Private position update (P&L, action items)
+  ├─ Link to live GitHub Pages
+  └─ Alerts for high-priority trades
 ```
 
 ---
@@ -75,9 +147,9 @@ Step 7: Notify User
 def fetch_todays_catalysts():
     catalysts = []
     
-    # Earnings (pre-market)
+    # Earnings (pre-market and intraday)
     earnings = web_search(
-        query="earnings today pre-market stocks",
+        query="earnings today intraday stocks",
         category="news",
         num_results=5
     )
@@ -103,115 +175,96 @@ def fetch_todays_catalysts():
     return catalysts
 ```
 
-**Data Structure:**
-```json
-{
-  "date": "2026-02-11",
-  "catalysts": [
-    {
-      "type": "earnings",
-      "ticker": "TMUS",
-      "company": "T-Mobile",
-      "time": "pre_market",
-      "expected_move": "3-5%",
-      "historical_beat_rate": 0.90,
-      "links": {
-        "earnings_call": "https://...",
-        "estimates": "https://..."
-      }
-    }
-  ]
-}
-```
+**Key Data Points:**
+- Event type (earnings, FDA, economic)
+- Time (pre-market, intraday, after-hours)
+- Expected volatility/impact
+- Relevant tickers
 
 ---
 
 ### Step 2: Scan for Post-Spike Shorts
 
-**Objective:** Find biotech stocks that spiked yesterday, now ready to fade
+**Objective:** Identify biotech stocks that spiked +40% yesterday for potential shorts today
 
 **Implementation:**
 ```python
-def scan_biotech_spikes():
-    # Run Biotech Spike Scanner script
-    result = manage_scripts(
+def run_biotech_spike_scanner():
+    # Run existing script
+    results = manage_scripts(
         action='run',
         script_path='scripts/python/biotech_spike_scanner.py'
     )
     
-    spikes = result['opportunities']
+    # Filter for actionable opportunities
+    actionable = [
+        play for play in results 
+        if play.get('action') != 'skip'
+    ]
     
-    # Enrich with short data
-    for spike in spikes:
-        spike['borrow_rate'] = fetch_borrow_rate(spike['ticker'])
-        spike['float'] = fetch_float(spike['ticker'])
-        spike['short_interest'] = fetch_short_interest(spike['ticker'])
-        spike['priced_in_score'] = calculate_priced_in(spike)
+    # For each opportunity, gather:
+    for play in actionable:
+        # Technical analysis (chart patterns)
+        play['technical'] = analyze_technicals(play['ticker'])
+        
+        # Sentiment analysis (Reddit, Twitter, StockTwits)
+        play['sentiment'] = check_crowd_sentiment(play['ticker'])
+        
+        # "Priced in" risk assessment
+        play['risk_score'] = calculate_priced_in_risk(play)
+        
+        # Generic entry/exit ideas (NOT your actual trades)
+        play['setup'] = {
+            'entry_zone': f"${play['support']}-${play['resistance']}",
+            'target': f"${play['downside_target']}",
+            'stop': f"${play['upside_stop']}",
+            'position_size': '25% max (high risk)',
+            'timing': 'Watch for weakness in first 30 min'
+        }
     
-    # Filter: Only include if shortable
-    return [s for s in spikes if s['borrow_rate'] and s['borrow_rate'] < 50]
+    return actionable
 ```
 
-**Research Checklist (Per Spike):**
-- [ ] What was the catalyst? (FDA, earnings, partnership)
-- [ ] Has news fully disseminated? (24h+ since announcement)
-- [ ] Historical pattern? (Does this company have pump/dump history)
-- [ ] Insider activity? (Recent Form 4 filings)
-- [ ] Short squeeze risk? (SI%, borrow rate, days to cover)
-
----
-
-### Step 3: Update Existing Positions
-
-**Objective:** Show current P&L and exit recommendations
-
-**Implementation:**
-```python
-def update_positions():
-    positions = []
-    
-    # BMNR Short
-    bmnr = manage_scripts(
-        action='run',
-        script_path='scripts/ostium/bmnr_short_tracker.py'
-    )
-    positions.append(format_bmnr_position(bmnr))
-    
-    # Polymarket positions (if any)
-    pm_positions = fetch_polymarket_positions()
-    positions.extend([format_pm_position(p) for p in pm_positions])
-    
-    # Crypto holdings
-    crypto = manage_scripts(
-        action='run',
-        script_path='scripts/coingecko/core_portfolio_tracker.py'
-    )
-    positions.append(format_crypto_holdings(crypto))
-    
-    return positions
-```
-
-**Output Format:**
+**Output Format (PUBLIC):**
 ```markdown
-## Current Positions
+## New Opportunity: [TICKER] ([Company Name]) ⚠️ RISK LEVEL
 
-### BMNR Short (Ostium 3x)
-- Entry: $20.12 | Current: $19.95 | P&L: +2.44%
-- Liquidation: $27.00 (34.2% away)
-- Status: HOLD - Target $19.50 for profit exit
-- [Live Chart](https://www.tradingview.com/chart/?symbol=BMNR)
+### The Setup
+**Catalyst:** [What happened]
+- Key data points
+- Trial results / news summary
 
-### Crypto Holdings
-- BTC: $98,234 (+2.3% 24h)
-- ETH: $3,456 (+1.8% 24h)
-- SOL: $145 (+5.2% 24h)
+### Price Action
+- Yesterday's move: +X%
+- Current range: $X.XX - $X.XX
+- Volume analysis
+
+### "Priced In" Risk Assessment
+**🔴/🟡/🟢 [RISK LEVEL] - X% Already Priced In**
+
+Reasoning:
+1. ✅/❌ Factor 1
+2. ✅/❌ Factor 2
+...
+
+### Setup Ideas (Educational)
+**IF conditions met:** [Market conditions]
+
+Entry zone: $X.XX-$X.XX (generic technical levels)
+Position size: X% max
+Stop: $X.XX
+Targets: 
+- T1: $X.XX (+X%)
+- T2: $X.XX (+X%)
+
+**Avoid if:** [Red flags]
 ```
 
 ---
 
-### Step 4: Check Forward Calendar
+### Step 3: Load Forward Calendar
 
-**Objective:** Surface upcoming catalysts that need preparation
+**Objective:** Surface upcoming catalysts worth monitoring
 
 **Implementation:**
 ```python
@@ -220,323 +273,326 @@ def load_forward_calendar():
     with open('data/forward_calendar.json', 'r') as f:
         calendar = json.load(f)
     
-    today = datetime.now().date()
-    relevant = []
+    # Filter for relevant upcoming events
+    today = datetime.now()
+    relevant = [
+        event for event in calendar['events']
+        if today <= event['date'] <= today + timedelta(days=30)
+    ]
     
-    for catalyst in calendar['catalysts']:
-        cat_date = datetime.strptime(catalyst['date'], '%Y-%m-%d').date()
-        days_away = (cat_date - today).days
-        
-        # Include if 3-30 days out
-        if 3 <= days_away <= 30:
-            catalyst['days_away'] = days_away
-            relevant.append(catalyst)
-    
-    return sorted(relevant, key=lambda x: x['days_away'])
-```
-
-**Forward Calendar Structure:**
-```json
-{
-  "updated_at": "2026-02-11T01:59:00Z",
-  "catalysts": [
-    {
-      "date": "2026-02-15",
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "catalyst_type": "earnings",
-      "expected_move": "5-8%",
-      "notes": "Q4 results - AI data center revenue key metric"
+    # Group by week
+    by_week = {
+        'this_week': [],
+        'next_week': [],
+        'beyond': []
     }
-  ]
-}
+    
+    for event in relevant:
+        days_out = (event['date'] - today).days
+        if days_out <= 7:
+            by_week['this_week'].append(event)
+        elif days_out <= 14:
+            by_week['next_week'].append(event)
+        else:
+            by_week['beyond'].append(event)
+    
+    return by_week
 ```
 
 ---
 
-### Step 5: Generate Battleplan
+### Step 4: Generate PUBLIC Battleplan
 
-**Objective:** Synthesize all data into actionable markdown
+**Objective:** Create educational markdown content with clear separation from personal trades
 
-**Template:**
+**Template Structure:**
 ```markdown
 # [Day], [Date] - Intraday Trading Battleplan
 
-## Current Positions
-[From Step 3]
-
-## New Opportunity #1: [Ticker]
-### The Setup
-- Catalyst: [What happened]
-- Price Action: [How it moved]
-- Crowd Sentiment: [Retail hype level]
-
-### Technical Levels
-- Entry: [Price range]
-- Target: [Exit price]
-- Stop: [Risk limit]
-
-### Priced In Risk Assessment
-[Score with reasoning]
-
-### Trade Checklist
-- [ ] Verify borrow availability
-- [ ] Check float and SI%
-- [ ] Set alerts at key levels
+## Market Overview
+[Brief market context, key themes for the day]
 
 ---
 
-## Forward Calendar
-
-### This Week
-- [Date]: [Ticker] - [Catalyst]
-
-### Next 2-4 Weeks
-- [Date]: [Ticker] - [Catalyst]
+## Today's Catalyst Calendar
+- **Pre-Market:** [List]
+- **Intraday:** [List]
+- **After-Hours:** [List]
 
 ---
 
-## Today's Gameplan
+## Setup #1: [Opportunity Name]
 
-### Pre-Market (7:00-9:30 AM)
-1. [Action item]
-
-### Market Hours (9:30 AM - 4:00 PM)
-1. [Action item]
-
-### After Hours (4:00-8:00 PM)
-1. [Action item]
+[Full setup details as shown in Step 2 format]
 
 ---
 
-## Risk Management
-- Max loss per trade: [Amount]
-- Max portfolio heat: [Percentage]
-- Position sizing: [Formula]
+## Setup #2: [Another Opportunity]
+
+[...]
 
 ---
 
-## Notes
-[Any additional context]
+## Forward Calendar: Upcoming Catalysts
+
+### This Week ([Date Range])
+- [Event 1]
+- [Event 2]
+
+### Next Week ([Date Range])
+- [Event 1]
+
+### Beyond ([Date Range])
+- [Event 1]
+
+---
+
+## Risk Management Guidelines
+- Max position size: X% per trade
+- Stop losses mandatory
+- Take profits at targets
+- Daily loss limit: X%
+
+---
+
+## Key Links
+- [Chart links]
+- [News sources]
+- [Calendar links]
+
+---
+
+**Last Updated:** [Timestamp]
+**Next Update:** [Tomorrow's date] at 8:00 AM EST (automated)
+```
+
+**Critical Rules:**
+- ❌ NO "Current Position" sections
+- ❌ NO personal entry prices or P&L
+- ❌ NO "My trade" language
+- ✅ Use "Consider...", "Watch for...", "Setup available..."
+- ✅ Present as educational/advisory content
+- ✅ Generic technical levels, not your actual stops
+
+---
+
+### Step 5: Update PRIVATE Positions
+
+**Objective:** Track your actual trades separately from public battleplan
+
+**Implementation:**
+```python
+def update_private_positions():
+    positions = {}
+    
+    # BMNR short position (if active)
+    bmnr = manage_scripts(
+        action='run',
+        script_path='scripts/ostium/bmnr_short_tracker.py'
+    )
+    if bmnr['has_position']:
+        positions['BMNR'] = {
+            'type': 'short',
+            'entry': bmnr['entry_price'],
+            'current': bmnr['current_price'],
+            'pnl_pct': bmnr['pnl_pct'],
+            'liquidation': bmnr['liquidation_price'],
+            'action': bmnr['recommendation']
+        }
+    
+    # Crypto portfolio
+    crypto = manage_scripts(
+        action='run',
+        script_path='scripts/coingecko/core_portfolio_tracker.py'
+    )
+    positions['crypto'] = crypto['portfolio']
+    
+    # Polymarket positions (if any)
+    # ... additional position trackers
+    
+    # Save to PRIVATE file (never committed to Git)
+    with open('data/private_positions.json', 'w') as f:
+        json.dump({
+            'last_updated': datetime.now().isoformat(),
+            'positions': positions
+        }, f, indent=2)
+    
+    return positions
+```
+
+**Private Position Display (Nebula Chat Only):**
+```
+📊 Your Private Position Update:
+
+BMNR Short:
+  Entry: $20.12
+  Current: $19.95 (+2.44% P&L)
+  Liquidation: $27.00
+  Action: HOLD or EXIT at open based on overnight action
+
+Crypto Portfolio:
+  BTC: $XX,XXX (+X.X%)
+  ETH: $X,XXX (+X.X%)
+  Total: $XX,XXX (+X.X%)
 ```
 
 ---
 
-### Step 6: Publish to GitHub Pages
+### Step 6: Publish to GitHub
 
-**Objective:** Make battleplan publicly accessible
+**Objective:** Deploy public battleplan while keeping private data safe
 
 **Implementation:**
 ```python
-def publish_battleplan(markdown_content):
-    # 1. Archive yesterday's plan
+def publish_to_github():
+    # 1. Archive yesterday's battleplan
     yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
-    archive_path = f'archive/{yesterday}_battleplan.md'
     
-    # Move current index.md to archive (if exists)
-    run_action(
+    # Get current index.md
+    current = run_action(
         action_key='github-get-repository-content',
-        account_id='apn_XehbgoX',
-        props={'repoFullname': 'dutchiono/trading-battleplans', 'path': 'index.md'}
+        props={'repoFullname': 'dutchiono/trading-battleplans', 'path': 'index.md'},
+        account_id='apn_XehbgoX'
     )
-    # ... (archive logic)
     
-    # 2. Update index.md with today's plan
+    # Archive it
     run_action(
         action_key='github-create-or-update-file-contents',
-        account_id='apn_XehbgoX',
+        props={
+            'repoFullname': 'dutchiono/trading-battleplans',
+            'path': f'archive/{yesterday}.md',
+            'fileContent': current['content'],
+            'commitMessage': f'Archive battleplan from {yesterday}'
+        },
+        account_id='apn_XehbgoX'
+    )
+    
+    # 2. Generate today's PUBLIC battleplan
+    battleplan = generate_public_battleplan()
+    
+    # 3. VERIFY no private data before committing
+    if has_private_data(battleplan):
+        raise Exception("ERROR: Private data detected in battleplan! Aborting publish.")
+    
+    # 4. Update index.md
+    run_action(
+        action_key='github-create-or-update-file-contents',
         props={
             'repoFullname': 'dutchiono/trading-battleplans',
             'path': 'index.md',
-            'fileContent': markdown_content,
-            'commitMessage': f'Update battleplan for {datetime.now().strftime("%Y-%m-%d")}',
-            'branch': 'main'
-        }
+            'fileContent': battleplan,
+            'commitMessage': f'Update battleplan for {datetime.now().strftime("%Y-%m-%d")}'
+        },
+        account_id='apn_XehbgoX'
     )
     
-    # 3. Wait for GitHub Pages build
-    time.sleep(180)  # 3 minutes
+    return True
+```
+
+**Safety Checks:**
+```python
+def has_private_data(content):
+    """Check for accidental private data leaks"""
+    red_flags = [
+        'Entry: $',
+        'Current: $',
+        'P&L',
+        'My position',
+        'I entered',
+        'liquidation: $',
+        'unrealized',
+        'position size: X shares'
+    ]
     
-    # 4. Return live URL
-    return 'https://dutchiono.github.io/trading-battleplans/'
-```
-
----
-
-### Step 7: Notify User
-
-**Objective:** Alert user that battleplan is ready
-
-**Implementation:**
-```python
-def notify_user(battleplan_url, summary):
-    message = f"""
-🎯 Daily Battleplan Generated!
-
-📊 Summary:
-- Current Positions: {summary['positions_count']}
-- New Opportunities: {summary['opportunities_count']}
-- Forward Catalysts: {summary['calendar_count']}
-
-🔗 Live Battleplan: {battleplan_url}
-
-✅ Next Steps:
-1. Review BMNR position status
-2. Check borrow availability for new shorts
-3. Set alerts for key price levels
-    """
+    for flag in red_flags:
+        if flag.lower() in content.lower():
+            return True
     
-    # Post in Nebula chat (automatic)
-    print(message)
-    
-    # Optional: Send email
-    # send_email(to='dutchiono@gmail.com', subject='Daily Battleplan', body=message)
-    
-    # Optional: Send Telegram
-    # send_telegram(chat_id='YOUR_CHAT_ID', text=message)
+    return False
 ```
 
 ---
 
-## Task Recipe (For Trigger)
+## Monitoring & Alerts
 
-**File:** `recipes/daily_battleplan_generator/TASK.md`
+### Success Indicators
+- ✅ Battleplan published by 8:05 AM ET
+- ✅ GitHub Pages deployed within 5 minutes
+- ✅ No private data in public repository
+- ✅ Private positions updated in Nebula
 
-```markdown
+### Failure Recovery
+If automation fails:
+1. Check trigger status: `manage_triggers(action='get', trigger_slug='daily-trading-battleplan-generator')`
+2. Review error logs in Nebula chat
+3. Manual fallback: Run task recipe manually via `manage_tasks(action='load_recipe', recipe='...')`
+4. Emergency: Generate battleplan manually and push via GitHub UI
+
 ---
-title: Daily Trading Battleplan Generator
-description: Generates and publishes daily trading battleplan at 8 AM ET
----
 
-## Steps
+## File Organization
 
-1. Fetch today's catalysts (earnings, FDA, economic data)
-2. Run biotech spike scanner for post-catalyst shorts
-3. Update existing positions (BMNR, crypto, Polymarket)
-4. Load forward calendar (3-30 days out)
-5. Generate markdown battleplan
-6. Archive yesterday's plan to /archive
-7. Publish to index.md on GitHub
-8. Notify user with summary
+### GitHub Repository (PUBLIC)
+```
+dutchiono/trading-battleplans/
+├── index.md                    # Today's battleplan (PUBLIC)
+├── archive/                    
+│   ├── 2026-02-10.md           # Yesterday's battleplan
+│   └── 2026-02-09.md           # Historical
+├── ARCHITECTURE.md             # System documentation
+├── DAILY_WORKFLOW.md           # This file
+├── SETUP.md                    # Setup instructions
+└── data/
+    └── forward_calendar.json   # Upcoming catalysts (PUBLIC)
+```
 
-## Expected Output
-- Updated index.md with today's battleplan
-- Archived previous day's battleplan
-- Summary posted in Nebula chat
-- Live URL: https://dutchiono.github.io/trading-battleplans/
+### Nebula Workspace (PRIVATE - Gitignored)
+```
+data/
+├── private_positions.json      # Your actual trades
+├── position_history.json       # Historical P&L
+├── trade_journal.json          # Trade notes
+└── forward_calendar.json       # LOCAL copy for updates
+```
+
+### `.gitignore` Configuration
+```
+# Private position data - NEVER commit
+data/private_*.json
+data/position_*.json
+data/trade_*.json
+
+# Local environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
 ```
 
 ---
 
-## Trigger Configuration
+## Best Practices
 
-```python
-manage_triggers(
-    action='create',
-    name='Daily Trading Battleplan Generator',
-    description='Automatically generates and publishes daily trading battleplan at 8 AM ET with catalysts, opportunities, and forward calendar',
-    trigger_type='cron',
-    cron_expression='0 13 * * *',  # 8 AM ET = 1 PM UTC (DST-adjusted)
-    recipe='recipes/daily_battleplan_generator/TASK.md',
-    is_active=True
-)
-```
+### Public Content (GitHub)
+- ✅ Educational and advisory tone
+- ✅ Generic setup ideas with technical levels
+- ✅ Risk analysis and "priced in" assessments
+- ✅ Market research and catalyst information
+- ❌ Personal positions, entries, or P&L
+- ❌ "I" or "my" when discussing trades
+- ❌ Actual stop loss levels of active positions
 
-**Note:** Adjust cron for EST vs EDT (UTC-5 vs UTC-4)
-
----
-
-## Manual Execution
-
-```python
-# Generate battleplan on-demand
-"Generate today's trading battleplan"
-
-# Or load and execute recipe
-manage_tasks(
-    action='load_recipe',
-    recipe='recipes/daily_battleplan_generator/TASK.md'
-)
-```
+### Private Tracking (Nebula)
+- ✅ Detailed position data with exact entries
+- ✅ Real-time P&L calculations
+- ✅ Personal trade journal and notes
+- ✅ Strategy performance metrics
+- ❌ Never commit to GitHub
+- ❌ Don't mix with public content
 
 ---
 
-## Customization Options
-
-### Filter Criteria
-```python
-# Adjust biotech spike threshold
-SPIKE_THRESHOLD = 40  # Default: +40%
-
-# Adjust forward calendar window
-FORWARD_DAYS_MIN = 3
-FORWARD_DAYS_MAX = 30
-
-# Adjust opportunity ranking
-RANK_BY = 'risk_reward'  # Options: 'edge', 'conviction', 'risk_reward'
-```
-
-### Content Sections
-```python
-# Enable/disable sections
-INCLUDE_POSITIONS = True
-INCLUDE_OPPORTUNITIES = True
-INCLUDE_FORWARD_CALENDAR = True
-INCLUDE_GAMEPLAN = True
-INCLUDE_RISK_MANAGEMENT = True
-```
-
-### Notification Channels
-```python
-# Configure alerts
-NOTIFY_NEBULA = True  # Always enabled
-NOTIFY_EMAIL = False  # Optional
-NOTIFY_TELEGRAM = False  # Optional
-```
-
----
-
-## Monitoring
-
-### Success Metrics
-- ✅ Trigger fires daily at 8:00 AM ET
-- ✅ Battleplan generation completes in <5 minutes
-- ✅ GitHub Pages deploys within 5 minutes
-- ✅ Live URL accessible and up-to-date
-
-### Failure Scenarios
-
-**Trigger Doesn't Fire:**
-- Check trigger status (active/paused)
-- Verify cron expression
-- Check Nebula trigger history
-
-**Battleplan Generation Fails:**
-- Check API rate limits (web search, market data)
-- Verify script execution logs
-- Test individual components (catalyst fetch, spike scan, etc.)
-
-**GitHub Push Fails:**
-- Check authentication (OAuth token)
-- Verify repository permissions
-- Test manual push
-
-**Pages Build Fails:**
-- Check GitHub Actions tab for errors
-- Verify markdown syntax (Jekyll compatibility)
-- Test locally with Jekyll
-
----
-
-## Related Documentation
-
-- [ARCHITECTURE.md](ARCHITECTURE.md) - System design
-- [SCRIPTS.md](SCRIPTS.md) - Script details
-- [SETUP.md](SETUP.md) - Installation guide
-- [README.md](README.md) - Quick start
-
----
-
-**Workflow Version:** 1.0  
-**Last Updated:** 2026-02-11  
-**Maintained By:** Nebula AI + dutchiono
+**Last Updated:** February 11, 2026  
+**Next Review:** When workflow processes change

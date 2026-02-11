@@ -1,362 +1,387 @@
 # Intraday Long Setups Guide
 
 ## Overview
-Complement to short-focused battleplans. This guide covers momentum breakouts, catalyst plays, and scalp opportunities for the LONG side during the $500-$6K account growth phase.
+This guide covers high-probability intraday long setups for the $500-$6,000 account scaling strategy. Focus on momentum breakouts, catalyst plays, and scalp opportunities with strict risk management.
 
 ---
 
-## Setup Categories
+## Setup Type #1: Momentum Breakouts
 
-### 1. Momentum Breakouts
-**Best For:** Catching continuation moves after strong opening or mid-day surges
+### Identification Criteria
+**Technical Setup:**
+- Stock breaks above resistance with volume 2x+ average
+- Clear consolidation pattern (flag, pennant, triangle)
+- Higher lows on pullbacks (uptrend intact)
+- RSI 50-70 range (room to run, not overbought)
+- Price above 20-period moving average
 
-#### Pattern Recognition
-- **Opening Gap & Go:** Stock gaps up 5-15% on volume, holds above VWAP first 30 min
-- **Consolidation Breakout:** Tight range (2-3% width) for 20+ min, then volume spike breaks out
-- **Bull Flag:** Strong move up, tight pullback on low volume, breaks previous high on volume surge
+**Volume Confirmation:**
+- Breakout volume > 150% of 10-day average
+- Increasing volume on each higher high
+- Large green candles with minimal wicks
 
-#### Entry Criteria
-✅ **Green Flags:**
-- Volume 3x+ average on breakout candle
-- Breaking above key resistance (previous day high, VWAP, round number)
-- Strong sector momentum (3+ stocks in sector moving)
-- Pre-market or early-session catalyst (news, earnings beat, analyst upgrade)
-- Holding key support on pullbacks
-
-❌ **Red Flags:**
-- Extended move (>30% from open without consolidation)
-- Decreasing volume on each leg up
-- Approaching major resistance (52-week high, gap fill)
-- Sector rolling over or market dumping
-- Low float with rapid pump (potential rug)
-
-#### Position Sizing
-- **Account <$1,000:** 60-80% position, tight 3-5% stop
-- **Account $1,000-$3,000:** 40-60% position, 5-8% stop
-- **Account >$3,000:** 30-40% position, 8-10% stop
-
-#### Example Entry
-```
-Ticker: XYZ
-Setup: Bull flag breakout after +12% gap up on earnings beat
-Entry: $8.45 (breaks above flag high on volume)
-Stop: $8.15 (below flag low)
-Target 1: $8.90 (+5.3%) - 50% position
-Target 2: $9.30 (+10.1%) - 25% position
-Runner: $9.75 (+15.4%) - 25% position with trailing stop
-Risk/Reward: 1:3+ minimum
-```
-
----
-
-### 2. Catalyst Plays
-**Best For:** Trading known upcoming events (FDA, earnings, data releases)
-
-#### Types of Catalyst Plays
-
-##### A. Pre-Event Momentum (Day Before)
-**Logic:** Retail/institutional positioning before binary event
-
-**Entry Strategy:**
-- Watch for volume increase 1-2 days before event
-- Enter on dip to VWAP or key support
-- Small position (15-25% account) due to overnight risk
-- Exit before close if holding overnight is too risky
-
-**Example Setups:**
-- FDA decision tomorrow: Enter on afternoon dip if chart strong
-- Earnings after-hours: Enter intraday breakout, exit before 3:50 PM or hold small size
-- Economic data tomorrow AM: Enter strong sector leaders end-of-day
-
-##### B. Event Reaction Plays (Real-Time)
-**Logic:** Trade the immediate reaction to news release
-
-**Entry Strategy:**
-- Wait 2-5 minutes for initial volatility to settle
-- Enter on first pullback after positive news spike
-- Confirm with volume and price structure
-- Quick scalp (5-15 min hold) or day trade only
-
-**Example Events:**
-- FDA approval announcement: Wait for first red candle, enter dip if buying resumes
-- Earnings beat: Enter pullback to VWAP if still above previous resistance
-- Economic data surprise: Enter sector leaders that confirm with volume
-
-##### C. Post-Event Continuation
-**Logic:** Event creates new trend that continues for days/weeks
-
-**Entry Strategy:**
-- Day 2-3 after event, wait for consolidation/pullback
-- Enter breakout of consolidation on volume
-- This is a swing setup (2-5 day hold potential)
-- Larger stops (8-12%) but bigger targets (20-40%)
-
-**Example:**
-- Stock announces major contract, +40% day 1
-- Day 2: Consolidates in tight range on low volume
-- Day 3: Breaks out of consolidation, you enter for continuation to +60-80%
-
----
-
-### 3. Scalp Opportunities
-**Best For:** Quick 1-5% moves, multiple trades per day, high win rate
-
-#### Scalp Types
-
-##### A. VWAP Bounce Scalps
-**Setup:** Stock trending up, pulls back to VWAP, bounces
-
-**Entry:**
-- Price touches VWAP with volume spike (buying interest)
-- Green candle confirms bounce off VWAP
-- Enter as close to VWAP as possible
-
-**Exit:**
-- Target: Previous resistance or +2-3% move
-- Stop: Break below VWAP by 0.5%
-- Time: 5-20 minute hold
-
-**Best Conditions:**
-- Strong uptrend on 5-min chart
-- Multiple VWAP bounces already working
-- High volume stocks ($1M+ daily volume)
-
-##### B. Support/Resistance Scalps
-**Setup:** Clear S/R levels, stock bouncing between them
-
-**Entry:**
-- Enter at support if trend is up
-- Enter just below resistance if trend is down but reversing
-- Tight 1-2% stop
-
-**Exit:**
-- Target: Opposite S/R level
-- Stop: Clean break of S/R level
-- Time: 10-30 minute hold
-
-##### C. Breakout Scalps
-**Setup:** Tight consolidation breaks out on volume
-
-**Entry:**
-- Enter as price breaks consolidation high
-- Must see volume confirmation (1.5x+ average)
-- Tight stop just below breakout level
-
-**Exit:**
-- Target: Measured move (width of consolidation added to breakout point)
-- Stop: Re-entry into consolidation pattern
-- Time: 15-45 minute hold
-
----
-
-## Daily Workflow Integration
-
-### Pre-Market (7:00-9:30 AM ET)
-1. **Scan for gappers:** Stocks up 5-20% pre-market on news
-2. **Identify catalysts:** Earnings, FDA, partnerships, analyst upgrades
-3. **Mark key levels:** Pre-market high/low, VWAP, previous day close
-4. **Build watchlist:** 3-5 strongest setups for opening bell
-
-### Opening Bell (9:30-10:00 AM)
-1. **Watch first 5 min:** Let volatility settle, no entries yet
-2. **Identify trend:** Are gappers holding? New breakouts forming?
-3. **First entries:** 9:35-9:50 AM on clear patterns only
-
-### Mid-Day (10:00 AM-2:00 PM)
-1. **Consolidation plays:** Watch gappers consolidating for flag breakouts
-2. **VWAP scalps:** Trade bounces on strong trending stocks
-3. **Sector rotation:** New sectors breaking out mid-day
-
-### Power Hour (3:00-4:00 PM)
-1. **EOD momentum:** Institutions positioning for overnight
-2. **Quick scalps only:** Don't hold losers into close
-3. **Review for overnight:** Any positions worth holding? (rare)
-
----
-
-## Risk Management for Longs
-
-### Position Sizing Rules
-```
-Account Size    | Max Position | Stop Loss | Daily Trades
-----------------|--------------|-----------|-------------
-$500-$1,000     | 80%         | 3-5%      | 3-5 trades
-$1,000-$2,000   | 60%         | 5-8%      | 4-6 trades
-$2,000-$4,000   | 50%         | 6-10%     | 4-8 trades
-$4,000-$6,000   | 40%         | 8-12%     | 5-10 trades
-```
-
-### Daily Loss Limits
-- **Hard Stop:** -15% of account in one day
-- **After 2 losses:** Reduce position size by 50%
-- **After 3 losses:** Stop trading for the day
-- **Green Day Rule:** When up 10%+, don't give back more than 30% of gains
-
-### When to Cut Losses Fast
-- Stock breaks stop loss level
-- Volume dries up after entry
-- Market/sector turns against you
-- Better opportunity appears (cut loser, enter better setup)
-- Time stop: Setup not working after 30 min (momentum) or 2 hours (swing)
-
----
-
-## Combining Longs + Shorts in Daily Battleplan
-
-### Morning (9:30-11:30 AM)
-- **LONG bias:** Momentum breakouts, gap & go plays
-- **SHORT bias:** Failed breakouts, overnight gappers fading
-
-### Midday (11:30 AM-2:00 PM)
-- **LONG bias:** Consolidation breakouts, VWAP bounces
-- **SHORT bias:** Parabolic moves exhausting, failed V-bottoms
-
-### Afternoon (2:00-4:00 PM)
-- **LONG bias:** Power hour momentum, EOD institutional buying
-- **SHORT bias:** Extended runners failing, end-of-day profit-taking
-
----
-
-## Battleplan Template: Longs Section
-
-### Example Daily Battleplan Entry
-
-```markdown
-## Long Setup #1: ABC Momentum Breakout ⚡ MODERATE RISK
-
-### The Setup
-**Catalyst:** Announced $50M contract at 7:30 AM
-- Stock up +18% pre-market on 3x normal volume
-- Previous resistance at $12.50 (now support)
-- Sector showing strength (3 peers also up 5-10%)
-
-### Chart Analysis
-**Key Levels:**
-- Pre-market high: $13.20 (initial resistance)
-- VWAP: $12.80 (support zone)
-- Previous day close: $11.00 (gap fill risk)
-
-**Pattern:** Bull flag forming if consolidates $12.80-$13.20
+**Market Context:**
+- Sector showing relative strength
+- Broader market bullish or neutral (not dumping)
+- No major resistance overhead within 5-10%
 
 ### Entry Strategy
-**Timing:** 9:40-10:30 AM (after opening volatility)
+**Ideal Entry Points:**
+1. **Breakout Entry:** Buy the break above resistance on high volume
+   - Set buy stop 1-2 cents above resistance
+   - Enter first 50% of position immediately
+   - Add remaining 50% on first pullback to breakout level
 
-**Entry Zone:** $12.90-$13.10
-- Either: VWAP bounce with volume confirmation
-- Or: Bull flag breakout above $13.20 on volume
+2. **Pullback Entry:** Wait for retest of breakout level
+   - More conservative, better risk/reward
+   - Enter when price holds breakout level as new support
+   - Confirm with volume drying up on pullback
 
-**Position Size:** 40-60% of available capital
+**Position Sizing:**
+- Small account ($500-$1,500): 40-60% of capital per trade
+- Medium account ($1,500-$3,000): 30-40% per trade
+- Larger account ($3,000+): 20-30% per trade
 
-**Stop Loss:** $12.60 (below VWAP and pre-market support)
-- Risk: 2-4% depending on entry
+### Exit Strategy
+**Profit Targets:**
+- T1 (50% position): +5-8% gain (quick scalp)
+- T2 (30% position): +12-15% gain (swing target)
+- T3 (20% position): Trail with 8-period EMA (let winners run)
 
-**Targets:**
-- T1 (50%): $13.60 (+5%) - Previous intraday resistance
-- T2 (30%): $14.20 (+10%) - Psychological level
-- Runner (20%): $15.00+ (+15%) with trailing stop at T2
+**Stop Loss:**
+- Initial: 3-5% below entry
+- Move to breakeven when T1 hit
+- Trail stop below recent swing lows for remaining position
 
-**Risk/Reward:** 1:3 minimum (2-4% risk for 6-15% potential)
+**Exit Immediately If:**
+- Breaks back below breakout level on high volume
+- Volume dries up completely (no follow-through)
+- Broader market reverses hard
 
-### Avoid If:
-- Opens above $13.50 (too extended, wait for pullback)
-- Volume dies off in first 30 minutes (no follow-through)
-- Market opens weak (SPY down -1%+)
-- Can't hold VWAP on pullback (weak structure)
-
-### Trade Management
-- Scale out 50% at T1 (lock profit)
-- Move stop to breakeven after T1 hit
-- Trail stop under previous 5-min candle low after T2
-- Exit all by 3:50 PM if holding for day trade only
+### Example Patterns
 ```
+Bullish Flag Breakout:
+- Sharp rally (+15-30%)
+- Tight consolidation (3-5 days, narrow range)
+- Low volume during consolidation
+- Breakout on volume surge
+- Entry: Above flag high
+- Target: Flagpole length added to breakout point
+
+Cup and Handle:
+- U-shaped base (4-12 weeks)
+- Handle forms (pullback 10-15%)
+- Breakout above handle resistance
+- Entry: Above handle high
+- Target: Depth of cup added to breakout
+
+Bull Pennant:
+- Sharp rally (pole)
+- Converging trendlines (pennant)
+- Decreasing volume in pennant
+- Breakout to upside on volume
+- Entry: Above upper trendline
+- Target: Pole length added to breakout
+```
+
+### Risk Management
+- Never risk more than 2% of account on single trade
+- Use mental stops or stop-loss orders
+- Scale in (don't go all-in immediately)
+- Take partial profits at targets (don't be greedy)
 
 ---
 
-## Scanner Settings for Long Setups
+## Setup Type #2: Catalyst Plays
 
-### Momentum Breakout Scanner
-```
-Price: $1-$30
-Volume: >500K shares
-% Change: +5% to +30%
-Float: <100M shares (for squeeze potential)
-Sector: Healthcare, Tech, Small Cap
-Time: Pre-market + first 2 hours
-```
+### Pre-Market Catalysts
+**Earnings Beats:**
+- EPS and revenue both beat estimates
+- Raised guidance or positive commentary
+- Stock gapping up 5-15% pre-market
+- Watch for: strong pre-market volume, tight bid-ask spread
 
-### Catalyst Scanner
-```
-News: Earnings, FDA, Analyst Upgrade, Contract Award
-Time Frame: Today or announced overnight
-Price Action: Green on day, above VWAP
-Volume: 2x+ average
-```
+**FDA Approvals:**
+- Positive trial results or drug approval
+- Biotech/pharma stocks gapping up 20-50%
+- Research: phase of trial, market size, competition
+- Caution: Often priced in by open (high risk)
 
-### Scalp Scanner (Mid-Day)
-```
-Price: $5-$50 (liquid)
-Volume: >1M shares daily
-Pattern: Consolidation near HOD, VWAP bounces
-Chart: Clear support/resistance levels
-Spread: <$0.10 (for quick entries/exits)
-```
+**Unexpected News:**
+- Partnership/acquisition rumors
+- New contract wins
+- Analyst upgrades (from major firms)
+- Short squeeze setups (high SI + catalyst)
 
----
+### Entry Timing
+**First 30 Minutes (High Risk, High Reward):**
+- Enter ONLY if:
+  - Gap holds and consolidates
+  - No immediate dump at open
+  - Volume remains strong
+- Entry: On first pullback after initial surge
+- Stop: Below opening 15-minute low
 
-## Common Mistakes to Avoid
+**After 10:00 AM (More Conservative):**
+- Wait for morning volatility to settle
+- Identify support level from consolidation
+- Enter on breakout above morning high
+- Better risk/reward, cleaner chart
 
-### On Longs:
-❌ **Chasing:** Entering after stock already up 20-30% without pullback
-❌ **Hope:** Holding losing long past stop because "it might come back"
-❌ **FOMO:** Entering weak setup because you missed better one earlier
-❌ **Overtrading:** Taking every setup instead of best 2-3 per day
-❌ **Ignoring market:** Trading long into weak market environment
+**Afternoon Continuation:**
+- If morning was strong and held gains
+- Look for ascending triangle or bull flag
+- Enter on volume breakout
+- Target: end-of-day continuation
 
-### Better Approach:
-✅ **Patience:** Wait for clear entry at support or breakout, not middle of range
-✅ **Discipline:** Cut losers fast at stop, let winners run to targets
-✅ **Selectivity:** Only trade A+ setups with 1:3+ risk/reward
-✅ **Position sizing:** Scale into winners, keep losers small
-✅ **Market awareness:** Trade with the trend, not against it
+### Position Sizing (Catalyst Plays)
+**High Conviction (clear catalyst, strong technicals):**
+- 30-40% of available capital
+- Tighter stops (catalyst can reverse quickly)
 
----
+**Moderate Conviction (mixed signals):**
+- 15-25% of capital
+- Wider stops, smaller size
 
-## Psychology & Execution
+**Speculative (late to party, chasing):**
+- 10-15% max or skip entirely
+- High risk of being exit liquidity
 
-### Mindset for Long Trades
-- **Longs require patience:** Don't chase, wait for your price
-- **Scaling is key:** Enter 30-50% size, add on confirmation
-- **Profit-taking matters:** Don't let +10% turn into -5% (scale out!)
-- **Asymmetric risk:** Small losers, big winners = long-term success
+### Exit Strategy
+**Quick Scalp Approach:**
+- T1 (70%): +3-5% (take fast profit)
+- T2 (30%): +8-12% or trail
 
-### Pre-Trade Checklist
-Before entering any long:
-1. ✅ Clear catalyst or technical setup?
-2. ✅ Volume confirming the move?
-3. ✅ Entry at support/breakout, not mid-range?
-4. ✅ Stop loss defined and acceptable risk?
-5. ✅ Target is 2-3x larger than stop?
-6. ✅ Time available to manage trade?
+**Swing Approach (strong catalyst):**
+- T1 (40%): +10-15%
+- T2 (40%): +20-30%
+- T3 (20%): Trail, looking for multi-day move
 
----
-
-## Integration with Existing Battleplan
-
-The daily battleplan will now include:
-
-1. **Post-Spike Shorts** (existing): Yesterday's +40% biotech moves for short setups
-2. **Momentum Longs** (new): Today's gappers and breakout candidates
-3. **Catalyst Plays** (new): Both long and short setups around known events
-4. **Scalp Opportunities** (new): Intraday quick-hit trades for both directions
-
-Each section formatted with:
-- Setup description and catalyst
-- Technical levels and entry zones
-- Risk/reward analysis
-- Position sizing recommendations
-- Exit strategy and time management
+**Red Flags (Exit Immediately):**
+- Stock can't hold gains in first hour
+- Volume dies off (no follow-through)
+- Reverses below opening 15-min low
+- Broader market dumps hard
 
 ---
 
-**Last Updated:** February 11, 2026  
-**Use With:** Daily Trading Battleplan automation and forward calendar
+## Setup Type #3: Scalp Opportunities
+
+### High-Frequency Range Trading
+**Setup Requirements:**
+- Stock trading in tight range (2-5% width)
+- Clear support and resistance levels
+- High volume and liquidity (tight spreads)
+- Predictable price action (bounces repeating)
+
+**Entry Rules:**
+- Buy at support, sell at resistance
+- Enter when price touches support + RSI oversold
+- Use limit orders (don't chase)
+- Small size, high frequency (3-5+ trades per day)
+
+**Exit Rules:**
+- Take profit at resistance or +1-2%
+- Stop loss below support (1-1.5%)
+- Hold time: 5-30 minutes
+- Risk/Reward: 1:1.5 minimum
+
+### News-Driven Spikes
+**Event-Based Scalps:**
+- Economic data releases (CPI, jobs report, Fed)
+- Breaking news (mergers, earnings surprises)
+- Sector rotation plays
+
+**Execution:**
+- Wait for initial spike/dump
+- Enter on first bounce/pullback
+- Quick target: 2-4% move
+- Exit within 10-20 minutes
+- Don't hold through volatility
+
+### VWAP Scalps
+**Morning VWAP Bounce:**
+- Stock dips below VWAP in first hour
+- Volume increases, RSI oversold
+- Enter when price crosses back above VWAP
+- Target: +2-3% or previous high
+- Stop: Re-break below VWAP
+
+**VWAP Rejection:**
+- Stock fails to break above VWAP multiple times
+- Consider short (advanced) or skip
+- Or: wait for decisive break above VWAP with volume
+
+### Opening Range Breakout (ORB)
+**Setup:**
+- Mark high/low of first 5-15 minutes
+- Wait for breakout above/below range
+- Enter on breakout with volume confirmation
+- Target: Range height added to breakout level
+- Stop: Back inside range
+
+**Best Conditions:**
+- Gap up stocks with strong pre-market action
+- High relative volume
+- Clear catalyst or sector strength
+
+---
+
+## Screening for Long Setups
+
+### Daily Pre-Market Routine
+**6:00-9:00 AM ET:**
+1. Check pre-market gainers (+5% or more)
+2. Read news catalyst for each gainer
+3. Check technical setup (consolidation, breakout potential)
+4. Identify key levels (support, resistance, VWAP)
+5. Create watchlist (5-10 stocks max)
+
+### Intraday Scanning (During Market Hours)
+**Breakout Scanner Settings:**
+- Price: $2-$50 (avoid sub-$2 penny stocks)
+- Volume: >1M shares (liquidity required)
+- % Change: +3% to +15% (avoid exhaustion)
+- Relative Volume: >2.0
+- Pattern: Breaking above 20-day high or consolidation
+
+**Momentum Scanner:**
+- Stocks making new highs
+- RSI between 60-75
+- Above all key moving averages
+- Increasing volume
+
+**Tools:**
+- Finviz (free screener)
+- TradingView (charting + alerts)
+- Think or Swim (paper trading + scanning)
+- Benzinga Pro (news + catalyst calendar)
+
+---
+
+## Risk Management for Long Setups
+
+### Position Sizing by Account Size
+**$500-$1,000:**
+- Max position: 50% ($250-$500)
+- Max risk per trade: $50-$100 (10-20%)
+- Strategy: Aggressive scalping, 1-2 trades/day
+
+**$1,000-$2,500:**
+- Max position: 40% ($400-$1,000)
+- Max risk per trade: $50-$125 (5-10%)
+- Strategy: Mix of scalps and swing attempts
+
+**$2,500-$6,000:**
+- Max position: 30% ($750-$1,800)
+- Max risk per trade: $75-$180 (3-5%)
+- Strategy: Balanced approach, cherry-pick best setups
+
+### Daily Loss Limits
+- If down 10% in a day → Stop trading
+- If 2 consecutive losses → Reduce size by 50%
+- If 3 consecutive losses → Stop, review strategy
+- Never revenge trade or chase losses
+
+### Win Rate Expectations
+**Realistic Targets:**
+- Scalps: 60-70% win rate, 1:1 to 1:1.5 R/R
+- Momentum breakouts: 50-60% win rate, 1:2 to 1:3 R/R
+- Catalyst plays: 40-50% win rate, 1:2 to 1:4 R/R (high volatility)
+
+**Monthly Goals:**
+- Month 1-2: Focus on consistency, not size
+- Month 3-4: 20-40% monthly growth target
+- Month 5-6: 30-50% monthly growth (as confidence builds)
+
+---
+
+## Trading Psychology for Longs
+
+### Common Mistakes
+1. **FOMO (Chasing):** Entering after big move already happened
+   - Solution: Wait for pullback or skip trade
+
+2. **Holding Too Long:** Hoping for bigger gains, giving back profits
+   - Solution: Take profits at targets, use trailing stops
+
+3. **Averaging Down:** Adding to losing position
+   - Solution: NEVER average down on intraday trades
+
+4. **Ignoring Stops:** Letting small loss become big loss
+   - Solution: Honor stops religiously
+
+5. **Over-Trading:** Taking low-quality setups out of boredom
+   - Solution: Quality over quantity, patience
+
+### Mindset for Success
+- **Patience:** Best setups come to those who wait
+- **Discipline:** Follow your plan, rules exist for a reason
+- **Humility:** Market doesn't care about your opinion
+- **Adaptability:** Adjust strategy when market conditions change
+- **Detachment:** Don't fall in love with positions
+
+---
+
+## Example Intraday Long Plays
+
+### Example 1: Momentum Breakout
+**Stock:** XYZ Biotech  
+**Setup:** Breaking above 3-week consolidation on Phase 2 trial news  
+**Entry:** $8.50 (breakout above $8.45 resistance)  
+**Position Size:** $1,200 (40% of $3,000 account)  
+**Shares:** 141 shares  
+**Stop Loss:** $8.15 (-4.1%, risk = $49)  
+**Targets:**  
+- T1: $8.95 (+5.3%, $63 profit) - 70 shares sold  
+- T2: $9.50 (+11.8%, $141 profit total)  
+**Actual Result:** Exited 70 shares at $8.92, remaining 71 at $9.35. Total gain: +$87 (7.3% on capital deployed)
+
+### Example 2: Catalyst Play (Earnings)
+**Stock:** ABC Tech  
+**Catalyst:** Q4 earnings beat, raised guidance  
+**Pre-market:** Gap up +8% to $52  
+**Entry Strategy:** Wait for 10 AM consolidation  
+**Entry:** $51.50 (first pullback held)  
+**Position Size:** $900 (30% of $3,000)  
+**Shares:** 17 shares  
+**Stop Loss:** $50.00 (-2.9%, $25.50 risk)  
+**Target:** $54.00 (+4.9%, $42.50 profit)  
+**Actual Result:** Hit target at 1:00 PM, exited full position. Profit: $42.50 (4.7% gain)
+
+### Example 3: Opening Range Breakout
+**Stock:** QRS Energy  
+**Opening Range:** $15.10-$15.35 (first 15 min)  
+**Entry:** $15.40 (break above OR high with volume)  
+**Position Size:** $600 (20% of $3,000)  
+**Shares:** 38 shares  
+**Stop Loss:** $15.05 (back in range, $13.30 risk)  
+**Target:** $15.85 (OR height = $0.25, added to breakout)  
+**Actual Result:** Hit $15.75, trailed stop, stopped at $15.60. Profit: $7.60 (1.3% gain)
+
+---
+
+## Conclusion
+
+Successful intraday long trading requires:
+1. **Pattern Recognition:** Identifying high-probability setups
+2. **Timing:** Entering at optimal points (not chasing)
+3. **Risk Management:** Protecting capital with stops
+4. **Profit-Taking:** Locking in gains at targets
+5. **Discipline:** Following your plan consistently
+
+**Remember:**
+- Not every day will have A+ setups (skip mediocre trades)
+- Small consistent gains compound faster than home runs
+- Protect your capital - you can't trade without it
+- Journal your trades - learn from wins AND losses
+- Market conditions change - adapt your strategy
+
+---
+
+**For More Information:**
+- See HYPER_TRADING_STRATEGY.md for overall account scaling approach
+- See PRIVACY.md for data separation guidelines
+- See DAILY_WORKFLOW.md for automation integration
+
+**Last Updated:** February 11, 2026

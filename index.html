@@ -3,243 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Battleplan - Feb 11, 2026</title>
+    <title>Trading Battleplan - February 12, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: #0a0e17;
-            color: #e0e6ed;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
             line-height: 1.6;
             padding: 20px;
-            max-width: 1400px;
-            margin: 0 auto;
         }
-        .header {
-            border-bottom: 2px solid #1e293b;
-            padding-bottom: 20px;
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { 
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 30px;
+            border-radius: 8px;
             margin-bottom: 30px;
-        }
-        h1 { color: #60a5fa; font-size: 2em; margin-bottom: 5px; }
-        .timestamp { color: #64748b; font-size: 0.9em; }
-        .section {
-            background: #0f172a;
             border-left: 4px solid #3b82f6;
+        }
+        h1 { color: #60a5fa; font-size: 2.2em; margin-bottom: 10px; }
+        .date { color: #94a3b8; font-size: 1.1em; }
+        .section { 
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid #334155;
+        }
+        h2 { color: #60a5fa; margin-bottom: 20px; font-size: 1.8em; }
+        h3 { color: #e2e8f0; margin-bottom: 10px; font-size: 1.3em; }
+        .play { 
+            background: #0f172a;
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 4px;
-        }
-        h2 { color: #60a5fa; font-size: 1.4em; margin-bottom: 15px; }
-        .play {
-            background: #1e293b;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-            border-left: 3px solid #10b981;
+            border-radius: 6px;
+            border-left: 4px solid #3b82f6;
         }
         .play.short { border-left-color: #ef4444; }
-        .play h3 { color: #10b981; margin-bottom: 8px; font-size: 1.1em; }
-        .play.short h3 { color: #ef4444; }
-        .ticker {
-            background: #1e40af;
-            color: #fff;
-            padding: 2px 8px;
-            border-radius: 3px;
+        .play.long { border-left-color: #10b981; }
+        .ticker { 
+            color: #60a5fa;
             font-weight: bold;
-            font-size: 0.9em;
+            font-size: 1.2em;
+            font-family: 'Courier New', monospace;
         }
-        .price { color: #10b981; font-weight: bold; }
-        .price.down { color: #ef4444; }
-        .play-details { margin: 10px 0; padding: 10px; background: #0a0e17; border-radius: 3px; }
-        .play-details p { margin: 5px 0; font-size: 0.95em; }
-        .play-details strong { color: #60a5fa; }
-        .risk-badge {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 0.85em;
-            font-weight: bold;
-        }
-        .risk-low { background: #065f46; color: #10b981; }
-        .risk-medium { background: #92400e; color: #f59e0b; }
-        .risk-high { background: #7f1d1d; color: #ef4444; }
-        .notes { margin-top: 10px; font-size: 0.9em; color: #94a3b8; font-style: italic; }
-        .update-banner {
-            background: #1e40af;
-            border: 2px solid #3b82f6;
-            padding: 12px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            text-align: center;
+        .price { 
+            color: #94a3b8;
             font-size: 1.1em;
-            color: #fff;
+            margin: 10px 0;
         }
-        .calendar-item {
-            background: #1e293b;
-            padding: 12px;
-            border-radius: 4px;
-            border-left: 3px solid #f59e0b;
-            margin-bottom: 10px;
-        }
-        .calendar-date { color: #f59e0b; font-weight: bold; }
-        .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
-        .link-group {
-            background: #1e293b;
+        .play-details { margin-top: 15px; }
+        .play-details p { margin-bottom: 10px; }
+        .play-details strong { color: #cbd5e1; }
+        .catalyst-item {
+            background: #0f172a;
             padding: 15px;
-            border-radius: 4px;
-            flex: 1;
-            min-width: 250px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #8b5cf6;
         }
-        .link-group h4 { color: #60a5fa; font-size: 0.95em; margin-bottom: 10px; }
-        .link-group a {
-            color: #3b82f6;
+        .links { margin-top: 15px; }
+        .links a { 
+            color: #60a5fa;
             text-decoration: none;
-            display: block;
-            padding: 4px 0;
+            margin-right: 15px;
             font-size: 0.9em;
         }
-        .link-group a:hover { color: #60a5fa; text-decoration: underline; }
+        .links a:hover { text-decoration: underline; }
+        .risk-badge { padding: 2px 8px; border-radius: 3px; font-size: 0.85em; font-weight: bold; }
+        .risk-low { background: #10b981; color: #fff; }
+        .risk-medium { background: #f59e0b; color: #000; }
+        .risk-high { background: #ef4444; color: #fff; }
+        .notes { margin-top: 10px; font-size: 0.9em; color: #94a3b8; font-style: italic; }
+        .positions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .positions-table th, .positions-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+        .positions-table th {
+            background: #0f172a;
+            color: #60a5fa;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>⚡ Trading Battleplan</h1>
-        <div class="timestamp">February 11, 2026 • 8:00 AM ET</div>
+    <div class="container">
+        <header>
+            <h1>📊 Trading Battleplan</h1>
+            <div class="date">Wednesday, February 12, 2026</div>
+            <div class="date" style="margin-top: 5px;">Generated: 5:00 PM ET Feb 11</div>
+        </header>
+
+        <section class="section">
+            <h2>🎯 Tomorrow's Plays</h2>
+            
+            <div class="play short">
+                <h3><span class="ticker">QNCX</span> Quince Therapeutics - Post-Spike Fade Short <span class="risk-badge risk-high">HIGH RISK</span></h3>
+                <div class="price">Closed $0.32 (+146% yesterday)</div>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> Classic biotech parabolic pump - spiked 146% on Feb 10 with massive volume ($228M turnover)</p>
+                    <p><strong>Entry:</strong> Short on any gap up above $0.40 OR wait for first bounce after morning dump</p>
+                    <p><strong>Target:</strong> $0.15-$0.20 (reversion to pre-spike levels)</p>
+                    <p><strong>Stop:</strong> Above $0.50 (new breakout = thesis broken)</p>
+                    <p><strong>Size:</strong> Small position - penny stock with extreme volatility</p>
+                    <div class="notes">⚠️ Watch for continued unusual volume or news catalyst that could sustain the move. If it gaps DOWN at open, wait for bounce to $0.35-$0.40 range before shorting.</div>
+                </div>
+                <div class="links">
+                    <a href="https://finviz.com/quote.ashx?t=QNCX" target="_blank">Chart</a>
+                    <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=QNCX" target="_blank">SEC Filings</a>
+                </div>
+            </div>
+
+            <div class="play short">
+                <h3><span class="ticker">BMNR</span> BitMine Immersion - Crypto Proxy Fade <span class="risk-badge risk-medium">MEDIUM RISK</span></h3>
+                <div class="price">Current: ~$20-25 (Down from $161 high)</div>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> Ethereum treasury company (3.6M+ ETH) - already down 80%+ from highs</p>
+                    <p><strong>Entry:</strong> Monitor for any dead-cat bounce to $30-35 range to add to short</p>
+                    <p><strong>Target:</strong> $15 (next major support level)</p>
+                    <p><strong>Stop:</strong> Above $40 (invalidates downtrend)</p>
+                    <p><strong>Watch:</strong> ETH price action - if ETH rallies hard, BMNR will follow</p>
+                    <div class="notes">💡 Existing position tracking - look for any relief rally to add size. Beta ~10.69 so moves are amplified.</div>
+                </div>
+                <div class="links">
+                    <a href="https://finviz.com/quote.ashx?t=BMNR" target="_blank">Chart</a>
+                    <a href="https://coinmarketcap.com/currencies/ethereum/" target="_blank">ETH Price</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📅 Tomorrow's Catalysts</h2>
+            
+            <div class="catalyst-item">
+                <h3>No Major Earnings Scheduled</h3>
+                <p style="color: #94a3b8;">Light earnings day - next big report is NVDA on Feb 15 (after close)</p>
+            </div>
+
+            <div class="catalyst-item">
+                <h3>⚠️ Watch: Economic Data</h3>
+                <p><strong>Time:</strong> Check economic calendar for any surprise releases</p>
+                <p style="color: #94a3b8;">Next major data: Retail Sales Feb 18 (08:30 ET)</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📍 Existing Positions</h2>
+            
+            <table class="positions-table">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Type</th>
+                        <th>Current Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="ticker">BMNR</span></td>
+                        <td>Short</td>
+                        <td>~$20-25</td>
+                        <td>Down 80%+ from $161 high</td>
+                        <td>Hold - wait for bounce to add</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>📆 Forward Calendar (Next 7 Days)</h2>
+            
+            <div class="catalyst-item">
+                <h3>Feb 15 (Saturday) - <span class="ticker">NVDA</span> NVIDIA Earnings</h3>
+                <p><strong>Time:</strong> After market close</p>
+                <p><strong>Expected Move:</strong> 5-8%</p>
+                <p><strong>Watch For:</strong> Data center revenue growth, Blackwell chip demand, guidance</p>
+                <p><strong>Historical Beat Rate:</strong> 85%</p>
+                <div class="links">
+                    <a href="https://investor.nvidia.com/" target="_blank">Investor Relations</a>
+                    <a href="https://www.earningswhispers.com/stocks/nvda" target="_blank">Estimates</a>
+                </div>
+            </div>
+
+            <div class="catalyst-item">
+                <h3>Feb 18 (Tuesday) - Retail Sales Data</h3>
+                <p><strong>Time:</strong> 08:30 ET</p>
+                <p><strong>Expected Move:</strong> SPY 1-2%</p>
+                <p><strong>Consensus:</strong> +0.3% MoM</p>
+                <p><strong>Watch For:</strong> Consumer spending strength, inflation signals</p>
+                <div class="links">
+                    <a href="https://www.forexfactory.com/calendar" target="_blank">Economic Calendar</a>
+                </div>
+            </div>
+
+            <div class="catalyst-item">
+                <h3>Feb 20 (Thursday) - FOMC Minutes</h3>
+                <p><strong>Time:</strong> 14:00 ET (2:00 PM)</p>
+                <p><strong>Expected Move:</strong> Market-wide volatility</p>
+                <p><strong>Watch For:</strong> Rate cut timing signals, inflation commentary</p>
+                <div class="links">
+                    <a href="https://www.federalreserve.gov/newsevents/calendar.htm" target="_blank">Fed Calendar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>⚠️ Risk Management Rules</h2>
+            <ul style="list-style-position: inside; color: #cbd5e1;">
+                <li style="margin-bottom: 10px;">Max 2% risk per trade</li>
+                <li style="margin-bottom: 10px;">Cut losses at stop levels - NO exceptions</li>
+                <li style="margin-bottom: 10px;">Penny stocks (under $5): MAX 1% portfolio allocation</li>
+                <li style="margin-bottom: 10px;">Watch for halt risk on biotech names</li>
+                <li style="margin-bottom: 10px;">Scale out at targets - don't get greedy</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>This battleplan is for educational purposes only. Not financial advice.</p>
+            <p style="margin-top: 5px;">Always do your own research and manage risk appropriately.</p>
+        </footer>
     </div>
-
-    <section class="section">
-        <h2>🎯 Today's Plays</h2>
-        
-        <div class="update-banner">
-            <strong>🔔 8:00 AM ET UPDATE - NEW OPPORTUNITIES</strong>
-        </div>
-
-        <div class="play short">
-            <h3><span class="ticker">MRNA</span> Moderna - FDA Rejection Fade Short ⭐ NEW</h3>
-            <div class="price">-10% Pre-Market (~$63)</div>
-            <div class="play-details">
-                <p><strong>Catalyst:</strong> FDA REFUSED to review flu shot application (mRNA-1010). Major setback.</p>
-                <p><strong>Play:</strong> Short any dead cat bounce to $66-68 zone</p>
-                <p><strong>Entry:</strong> $66-68 (if bounces intraday)</p>
-                <p><strong>Target:</strong> $60-62 (continuation to new lows)</p>
-                <p><strong>Stop:</strong> $69 (invalidates thesis)</p>
-                <p><strong>Risk Level:</strong> <span class="risk-badge risk-medium">MEDIUM</span> - Biotech can be choppy, but news is bad</p>
-            </div>
-            <div class="notes">Wait for bounce INTO resistance. Don't chase down -10%. Company requested FDA meeting but damage done. Fade any morning pop.</div>
-        </div>
-
-        <div class="play short">
-            <h3><span class="ticker">HUM</span> Humana - Beat But Dropping Short ⭐ NEW</h3>
-            <div class="price">-6.7% Pre-Market</div>
-            <div class="play-details">
-                <p><strong>Catalyst:</strong> Beat on EPS/Revenue but stock dropping = guidance concerns.</p>
-                <p><strong>Play:</strong> Short continuation if fails to recover</p>
-                <p><strong>Entry:</strong> Below opening low (wait for confirmation)</p>
-                <p><strong>Target:</strong> -10% from open</p>
-                <p><strong>Stop:</strong> +3% above entry</p>
-                <p><strong>Risk Level:</strong> <span class="risk-badge risk-medium">MEDIUM</span> - Healthcare sector, check guidance language</p>
-            </div>
-            <div class="notes">Earnings beat but selling = red flag. Listen for guidance on call. If management weak on outlook, short is valid.</div>
-        </div>
-
-        <div class="play">
-            <h3><span class="ticker">KO</span> Coca-Cola - Earnings Beat Long</h3>
-            <div class="price">+4.0% Pre-Market ($68.50)</div>
-            <div class="play-details">
-                <p><strong>Catalyst:</strong> Q4 Revenue $11.54B vs $10.77B est. Strong guidance.</p>
-                <p><strong>Play:</strong> Long continuation if holds $68+ support at open</p>
-                <p><strong>Entry:</strong> $68.20-$68.50 (pullback to VWAP)</p>
-                <p><strong>Target:</strong> $69.50-$70.00 (gap fill + breakout)</p>
-                <p><strong>Stop:</strong> $67.80 (below pre-market low)</p>
-                <p><strong>Risk Level:</strong> <span class="risk-badge risk-low">LOW</span> - Blue chip, strong beat + guidance</p>
-            </div>
-            <div class="notes">Watch volume at open. If holds pre-market gains with strong buying, targets $70+. Exit if breaks $68 support.</div>
-        </div>
-
-        <div class="play">
-            <h3><span class="ticker">DD</span> DuPont - Electronics Breakout Long</h3>
-            <div class="price">+6.9% Pre-Market ($84.20)</div>
-            <div class="play-details">
-                <p><strong>Catalyst:</strong> Electronics segment strength. Analyst upgrades expected.</p>
-                <p><strong>Play:</strong> Breakout long above $85 resistance</p>
-                <p><strong>Entry:</strong> $85.10-$85.30 (break of $85 with volume)</p>
-                <p><strong>Target:</strong> $87-$88 (measured move from breakout)</p>
-                <p><strong>Stop:</strong> $84.50 (failed breakout)</p>
-                <p><strong>Risk Level:</strong> <span class="risk-badge risk-medium">MEDIUM</span> - Industrial stock, watch macro</p>
-            </div>
-            <div class="notes">Wait for $85 break with volume confirmation. Don't chase if gaps to $86+. If rejected at $85, wait for pullback to $84.</div>
-        </div>
-
-        <div class="play short">
-            <h3><span class="ticker">SHOP</span> Shopify - Earnings Fade Short</h3>
-            <div class="price">±13.36% Expected Move (Reports After Hours)</div>
-            <div class="play-details">
-                <p><strong>Catalyst:</strong> Earnings AH today. High IV = big move expected. E-commerce concerns.</p>
-                <p><strong>Play:</strong> Short if gaps up 10%+ on Feb 12 open (fade the gap)</p>
-                <p><strong>Entry:</strong> $95+ (ONLY if gaps from ~$85)</p>
-                <p><strong>Target:</strong> $88-$90 (gap fill zone)</p>
-                <p><strong>Stop:</strong> $97 (2-3% above entry - tight stop)</p>
-                <p><strong>Risk Level:</strong> <span class="risk-badge risk-high">HIGH</span> - Earnings volatility, momentum risk</p>
-            </div>
-            <div class="notes">ONLY short if it gaps up 10%+. Look for weak volume/selling in first 30min. Don't short if buyers stay aggressive. This is a FADE play, not a trend short.</div>
-        </div>
-
-        <div class="play">
-            <h3><span class="ticker">TMUS</span> T-Mobile - Earnings Reaction Long</h3>
-            <div class="price">90% Historical Beat Rate</div>
-            <div class="play-details">
-                <p><strong>Catalyst:</strong> Pre-market earnings. Check guidance on call (8:30 AM).</p>
-                <p><strong>Play:</strong> Long if beats + raises guidance</p>
-                <p><strong>Entry:</strong> Wait for reaction after call ($TBD based on report)</p>
-                <p><strong>Target:</strong> +3-5% from entry</p>
-                <p><strong>Stop:</strong> -2% from entry</p>
-                <p><strong>Risk Level:</strong> <span class="risk-badge risk-medium">MEDIUM</span> - Telecom is slower mover</p>
-            </div>
-            <div class="notes">Listen to earnings call for subscriber adds and guidance. If beats estimates, likely rallies. If misses or guides down, SKIP.</div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>📅 Forward Calendar</h2>
-        <div class="calendar-item">
-            <div class="calendar-date">Feb 15 (Sat) - Pre-Market</div>
-            <strong>NVIDIA (NVDA) Q4 Earnings</strong> - Expected move: 5-8%. AI demand story continues. Major catalyst.
-        </div>
-        <div class="calendar-item">
-            <div class="calendar-date">Feb 18 (Tue) - 8:30 AM ET</div>
-            <strong>January Retail Sales Data</strong> - Watch for consumer spending trends. Impacts retail stocks.
-        </div>
-        <div class="calendar-item">
-            <div class="calendar-date">Feb 20 (Thu) - 2:00 PM ET</div>
-            <strong>FOMC Minutes Release</strong> - Watch for Fed rate path commentary. Market volatility expected.
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>🔗 Quick Links</h2>
-        <div class="links">
-            <div class="link-group">
-                <h4>📊 Real-Time Scanners</h4>
-                <a href="https://finviz.com/screener.ashx?v=111&f=ta_change_u3&o=-change" target="_blank">Finviz Top Gainers</a>
-                <a href="https://finviz.com/screener.ashx?v=111&f=ta_change_d3&o=change" target="_blank">Finviz Top Losers</a>
-                <a href="https://www.benzinga.com/premarket/" target="_blank">Benzinga Pre-Market</a>
-            </div>
-            <div class="link-group">
-                <h4>🎧 Earnings Calls</h4>
-                <a href="https://seekingalpha.com/earnings/earnings-call-transcripts" target="_blank">Seeking Alpha Transcripts</a>
-                <a href="https://www.earningswhispers.com/calendar" target="_blank">Earnings Whispers Calendar</a>
-            </div>
-            <div class="link-group">
-                <h4>📈 Charts & Research</h4>
-                <a href="https://www.tradingview.com/" target="_blank">TradingView</a>
-                <a href="https://stockcharts.com/freecharts/marketsummary.html" target="_blank">StockCharts Market Summary</a>
-            </div>
-            <div class="link-group">
-                <h4>💊 Biotech Catalysts</h4>
-                <a href="https://www.biopharmcatalyst.com/calendars/fda-calendar" target="_blank">FDA Calendar</a>
-                <a href="https://www.biopharmcatalyst.com/calendars/pdufa-calendar" target="_blank">PDUFA Calendar</a>
-            </div>
-        </div>
-    </section>
 </body>
 </html>

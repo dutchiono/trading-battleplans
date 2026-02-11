@@ -1,0 +1,21 @@
+title: Daily Trading Battleplans
+description: Automated market analysis and trade planning system
+theme: minima
+show_downloads: false
+google_analytics: 
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

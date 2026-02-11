@@ -1,9 +1,3 @@
----
-layout: default
-title: Trading Battleplan - Feb 11, 2026
-description: Daily trading battleplan with market analysis and risk-ranked opportunities
----
-
 # Tuesday, February 11, 2026 - Intraday Trading Battleplan
 
 ## Current Position: BMNR Short
@@ -272,8 +266,3 @@ description: Daily trading battleplan with market analysis and risk-ranked oppor
 - [ ] Have exit plan written down BEFORE placing trades
 
 **Good luck. Trade the plan, not the emotion.** 🎯
-
----
-
-*Last updated: February 11, 2026*  
-*Powered by Nebula AI Trading System*

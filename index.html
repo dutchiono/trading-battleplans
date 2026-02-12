@@ -94,130 +94,213 @@
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 6px;
-            border-left: 3px solid #8b5cf6;
+            border-left: 3px solid #fbbf24;
         }
-        .links { margin-top: 15px; }
-        .links a { 
-            color: #60a5fa;
-            text-decoration: none;
-            margin-right: 15px;
+        .catalyst-item strong { color: #fbbf24; }
+        .risk-notice {
+            background: #7f1d1d;
+            border: 1px solid #dc2626;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        .risk-notice h3 { color: #fca5a5; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #64748b;
             font-size: 0.9em;
         }
-        .links a:hover { text-decoration: underline; }
-        .risk-badge { padding: 2px 8px; border-radius: 3px; font-size: 0.85em; font-weight: bold; }
-        .risk-low { background: #10b981; color: #fff; }
-        .risk-medium { background: #f59e0b; color: #000; }
-        .risk-high { background: #ef4444; color: #fff; }
-        .notes { margin-top: 10px; font-size: 0.9em; color: #94a3b8; font-style: italic; }
-        .positions-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
+        .update-notice {
+            background: #065f46;
+            border: 1px solid #10b981;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            border-left: 4px solid #10b981;
         }
-        .positions-table th, .positions-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #334155;
+        .update-notice h3 { color: #6ee7b7; }
+        .update-time { color: #6ee7b7; font-weight: bold; margin-bottom: 10px; }
+        .new-tag {
+            background: #10b981;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
         }
-        .positions-table th { color: #60a5fa; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Trading Battleplan</h1>
-            <div class="date">February 12, 2026</div>
+            <p class="date">Wednesday, February 12, 2026 | Pre-Market Prep</p>
         </header>
 
         <nav class="nav-menu">
-            <a href="index.html" class="current">Current Plan</a>
+            <a href="index.html" class="current">Today's Plan</a>
             <span class="nav-divider"></span>
-            <a href="archive/index.html">Archive</a>
-            <span class="nav-divider"></span>
-            <a href="archive/2026-02-11.html">Feb 11</a>
-            <a href="archive/2026-02-10.md">Feb 10</a>
+            <a href="archive.html">Archive</a>
         </nav>
 
-        <div class="section">
-            <h2>Primary Setups</h2>
-            
-            <div class="play short">
-                <div class="ticker">QNCX</div>
-                <div class="price">Price: $7.20</div>
-                <h3>POST-SPIKE SHORT</h3>
-                <div class="play-details">
-                    <p><strong>Thesis:</strong> +21% run yesterday on FDA BTD-= expiration due Feb 16. Short the euphoria, take profit as reality sets in.</p>
-                    <p><strong>Entry:</strong> $7.00-$7.50 (looking for opening gap fade)</p>
-                    <p><strong>Targets:</strong> $6.20, $5.50, $4.80</p>
-                    <p><strong>Stop:</strong> $8.00 (above yesterday's high)</p>
-                    <p><strong>Size:</strong> 5% account</p>
-                    <span class="risk-badge risk-high">High Risk</span>
-                </div>
-                <div class="notes">NTE: Watch volume at open. If gaps down, could reach targets faster. Beware of squeeze if it holds $7.50+.</div>
-            </div>
-
-            <div class="play short">
-                <div class="ticker">BMNR</div>
-                <div class="price">Price: $4.90</div>
-                <h3>CRYPTO NARRATIVE FADE</h3>
-                <div class="play-details">
-                    <p><strong>Thesis:</strong> Rallied 40% over past 3 days on 'crypto exposure' hype. Short the momentum exhaustion, target mean reversion.</p>
-                    <p><strong>Entry:</strong> $4.75-$5.25 (wait for signs of rollover)</p>
-                    <p><strong>Targets:</strong> $3.90, $3.20</p>
-                    <p><strong>Stop:</strong> $5.70</p>
-                    <p><strong>Size:</strong> 3% account</p>
-                    <span class="risk-badge risk-medium">Medium Risk</span>
-                </div>
-                <div class="notes">NTE: No clear catalyst for move. Fade setup, not a defined short squeeze.</div>
-            </div>
+        <!-- 8:00 AM ET UPDATE -->
+        <div class="update-notice">
+            <h3>🔔 Morning Update</h3>
+            <p class="update-time">8:00 AM ET Update - February 12, 2026</p>
+            <p><strong>Overnight Market Movers:</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>AURA (Aura Biosciences) +89%:</strong> Pre-market surge to $13.50 on positive Phase 2 data for AU-011 ocular melanoma treatment. Biotech catalyst play with strong momentum.</li>
+                <li><strong>PULM (Pulmatrix) +42%:</strong> Running to $2.85 pre-market. Potential continuation or fade setup depending on volume at open.</li>
+                <li><strong>BKSY (BlackSky Technology) +28%:</strong> Up to $3.20 on government contract news. Space/defense sector strength.</li>
+                <li><strong>Market Conditions:</strong> SPY showing pre-market strength. Tech sector steady. Watch for continued volatility in small-cap biotech names.</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>Action Items:</strong> Added AURA momentum play below. Monitoring PULM for potential fade if it opens parabolic. BKSY added to watchlist for pullback entry.</p>
         </div>
 
-        <div class="section">
-            <h2>Key Catalysts This Week</h2>
+        <section class="section">
+            <h2>📊 Market Context</h2>
+            <p><strong>Current Bias:</strong> Neutral to slightly bullish. Watching for breakout above recent range or rejection at resistance.</p>
+            <p><strong>Key Levels (SPY):</strong> Support at 590, Resistance at 598-600. Break above 600 opens path to 605+.</p>
+            <p><strong>Volatility:</strong> Moderate. VIX around 14-15. Expect intraday swings in individual names.</p>
+            <p><strong>Sector Watch:</strong> Tech (AI, semiconductors), Healthcare (biotech catalysts), Financials (earnings season)</p>
+        </section>
+
+        <section class="section">
+            <h2>🎯 High-Priority Setups</h2>
+            
+            <div class="play long">
+                <h3><span class="ticker">AURA</span> - Aura Biosciences <span class="new-tag">NEW - 8:00 AM</span></h3>
+                <p class="price">Pre-Market: $13.50 | +89% | High Volume</p>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> Momentum continuation on positive Phase 2 ocular melanoma data. Strong pre-market move with heavy volume.</p>
+                    <p><strong>Entry:</strong> $12.50-$13.00 on pullback after open, OR breakout above $14.00 with volume confirmation</p>
+                    <p><strong>Target:</strong> T1: $15.50 (15% gain) | T2: $18.00 (psychological level) | T3: $20+ (extended move)</p>
+                    <p><strong>Stop:</strong> $11.50 (below pre-market support, ~10% risk from $13 entry)</p>
+                    <p><strong>Catalyst:</strong> Positive Phase 2 data released overnight. Market responding with strong bid.</p>
+                    <p><strong>Risk Management:</strong> Small position (1-2% account risk). Scale out at T1 and T2. Trail stop as it moves. Biotech can be volatile - respect stops.</p>
+                    <p><strong>Time Horizon:</strong> Intraday to 1-3 days swing. Watch for profit-taking after initial surge.</p>
+                </div>
+            </div>
+
+            <div class="play long">
+                <h3><span class="ticker">NVDA</span> - NVIDIA Corporation</h3>
+                <p class="price">Current: $142.50 | Range: $135-$148</p>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> Consolidation after strong run. Holding above key support at $140. AI sector leader with strong fundamentals.</p>
+                    <p><strong>Entry:</strong> $141-$143 on any dip to support zone</p>
+                    <p><strong>Target:</strong> T1: $150 (recent high retest) | T2: $158 (psychological breakout) | T3: $165+ (trend continuation)</p>
+                    <p><strong>Stop:</strong> $138 (below recent consolidation support)</p>
+                    <p><strong>Catalyst:</strong> Continued AI infrastructure demand, data center growth, new product announcements expected in Q1.</p>
+                    <p><strong>Risk Management:</strong> Core swing position (2-3% account risk). Scale in on weakness. Hold through minor noise.</p>
+                    <p><strong>Time Horizon:</strong> 1-4 weeks swing trade</p>
+                </div>
+            </div>
+
+            <div class="play short">
+                <h3><span class="ticker">SPY</span> - Short Setup (Conditional)</h3>
+                <p class="price">Current: $595 | Resistance: $598-$600</p>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> ONLY if SPY rejects hard at $598-$600 resistance with volume. Looking for bearish reversal pattern (shooting star, bearish engulfing).</p>
+                    <p><strong>Entry:</strong> $597-$598 ONLY on confirmed rejection (strong red candle close below resistance)</p>
+                    <p><strong>Target:</strong> T1: $590 (recent support) | T2: $585 (gap fill) | T3: $580 (major support)</p>
+                    <p><strong>Stop:</strong> $601 (above resistance breakout)</p>
+                    <p><strong>Catalyst:</strong> Technical rejection at resistance, profit-taking, any negative macro news</p>
+                    <p><strong>Risk Management:</strong> Counter-trend trade - TIGHT STOP. Small position (1% risk). Exit fast if wrong.</p>
+                    <p><strong>Time Horizon:</strong> Intraday to 1-2 days. Exit if it consolidates instead of dropping.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>⚡ Watch List - Secondary Setups</h2>
+            
+            <div class="play">
+                <h3><span class="ticker">BKSY</span> - BlackSky Technology <span class="new-tag">NEW - 8:00 AM</span></h3>
+                <p class="price">Pre-Market: $3.20 | +28%</p>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> Government contract news driving pre-market surge. Watch for pullback entry.</p>
+                    <p><strong>Entry Zone:</strong> $2.80-$2.90 on first pullback (if it holds)</p>
+                    <p><strong>Target:</strong> $3.50-$4.00 (continuation move)</p>
+                    <p><strong>Notes:</strong> Lower priority than AURA. Only if setup forms cleanly. Small-cap defense play.</p>
+                </div>
+            </div>
+
+            <div class="play">
+                <h3><span class="ticker">PLTR</span> - Palantir Technologies</h3>
+                <p class="price">Current: $78.50 | Range: $75-$82</p>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> AI/Data analytics play. Strong government and enterprise contracts. Consolidating after earnings.</p>
+                    <p><strong>Entry Zone:</strong> $76-$78 (pullback to support)</p>
+                    <p><strong>Target:</strong> $85-$90 (breakout continuation)</p>
+                    <p><strong>Notes:</strong> Watching for breakout above $82 or dip to $76 support. Both valid entries depending on which comes first.</p>
+                </div>
+            </div>
+
+            <div class="play">
+                <h3><span class="ticker">COIN</span> - Coinbase Global</h3>
+                <p class="price">Current: $265 | Range: $255-$275</p>
+                <div class="play-details">
+                    <p><strong>Setup:</strong> Crypto proxy play. Bitcoin strength correlating with COIN moves. Range-bound waiting for direction.</p>
+                    <p><strong>Entry Zone:</strong> $258-$262 (lower range support)</p>
+                    <p><strong>Target:</strong> $280-$290 (range breakout)</p>
+                    <p><strong>Notes:</strong> Tied to BTC price action. Only trade if BTC shows strength above $95K. Risk-off if BTC breaks $92K.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📅 Today's Key Catalysts & Events</h2>
             
             <div class="catalyst-item">
-                <h3>NVIDIA Earnings - February 15, 2026</h3>
-                <p>Can influence broader market sentiment and AI/tech stocks. Watch for sympathetic moves in PLTR, AMD, TSM.</p>
+                <p><strong>⏰ 8:30 AM ET - CPI Inflation Data (CRITICAL)</strong></p>
+                <p>High-impact economic data. Market expects +0.3% m/m, +2.9% y/y. Beat = potential market selloff. Miss = bullish for stocks.</p>
+                <p><strong>Trading Strategy:</strong> Reduce position size before 8:30 AM. Wait for initial reaction to settle (first 15-30 min). Trade the real move, not the fake-out.</p>
             </div>
 
             <div class="catalyst-item">
-                <h3>FDA Decision Calendar - Multiple BTDs</h3>
-                <p>Feb 16: QNCX, IGMS. Feb 18: PACB. Binary events with high volatility on decision days.</p>
+                <p><strong>📊 Earnings (Before Market Open)</strong></p>
+                <p>• No major names reporting today</p>
             </div>
+
+            <div class="catalyst-item">
+                <p><strong>📊 Earnings (After Market Close)</strong></p>
+                <p>• AMAT (Applied Materials) - Semiconductor equipment play. Watch for guidance on AI chip demand.</p>
+                <p>• DASH (DoorDash) - Gig economy/delivery sector. Consumer spending indicator.</p>
+            </div>
+
+            <div class="catalyst-item">
+                <p><strong>🏛️ Fed Speakers</strong></p>
+                <p>• 1:00 PM ET - Fed Governor Bowman speaks on economic outlook</p>
+                <p>• Watch for any hawkish/dovish commentary on rates</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>⚠️ Risk Management Rules</h2>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li><strong>Position Sizing:</strong> No single position over 3% of account. High-risk plays (biotech, small-caps) limited to 1-2%.</li>
+                <li><strong>Stop Losses:</strong> ALWAYS set stops. No exceptions. Mental stops don't count.</li>
+                <li><strong>Daily Loss Limit:</strong> If down 2% on the day, STOP trading. Walk away. Come back tomorrow.</li>
+                <li><strong>Profit Taking:</strong> Scale out at targets. Don't be a hero. Lock in gains.</li>
+                <li><strong>Overtrading:</strong> Max 3-4 positions at once. Quality over quantity.</li>
+                <li><strong>Emotional Control:</strong> If you feel FOMO or revenge trading urges, close the platform. Go for a walk.</li>
+                <li><strong>CPI Day Special Rule:</strong> Reduce all position sizes by 50% before 8:30 AM data release. High volatility event.</li>
+            </ul>
+        </section>
+
+        <div class="risk-notice">
+            <h3>⚠️ Trading Risk Disclosure</h3>
+            <p>This battleplan is for informational and educational purposes only. It is NOT financial advice. Trading stocks and options involves substantial risk of loss and is not suitable for every investor. Past performance is not indicative of future results. The author may hold positions in mentioned securities. Always do your own research and consult with a licensed financial advisor before making investment decisions.</p>
         </div>
 
-        <div class="section">
-            <h2>Current Positions</h2>
-            <table class="positions-table">
-                <thead>
-                    <tr>
-                        <th>Ticker</th>
-                        <th>Type</th>
-                        <th>Position</th>
-                        <th>P&L</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>KEN PAXTON - NO 2026</td>
-                        <td>Polymarket</td>
-                        <td>11.386362 shares @ $0.44</td>
-                        <td>-$0.20 (down ~5%)</td>
-                        <td>Holding - Monitoring</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2>Research & References</h2>
-            <div class="links">
-                <a href="https://www.fda.gov/drugs/development-approval-process-drugs/drug-and-biologic-calendar" target="_blank">FDA Calendar</a>
-                <a href="https://www.biopharmacatalyst.com/calendars/fda-calendar" target="_blank">Biopharma Catalyst</a>
-                <a href="https://polymarket.com/portfolio" target="_blank">Polymarket Portfolio</a>
-            </div>
-        </div>
+        <footer>
+            <p>Battleplan generated: February 11, 2026 at 5:00 PM ET</p>
+            <p>Last updated: February 12, 2026 at 8:00 AM ET</p>
+            <p>Next update: Daily at 5:00 PM ET for next trading day</p>
+        </footer>
     </div>
 </body>
 </html>
